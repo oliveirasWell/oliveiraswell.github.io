@@ -37,6 +37,11 @@ const socialLinks = {
         name: 'Gitlab',
         icon: 'gitlab',
         link: 'https://gitlab.com/oliveiraswell'
+    },
+    wakatime: {
+        name: 'Wakatime',
+        icon: 'clock',
+        link: 'https://wakatime.com/@oliveiraswell'
     }
 };
 
