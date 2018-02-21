@@ -45,6 +45,10 @@ const socialLinks = {
     }
 };
 
+const colors = {
+  spotlight : '#ff0065'
+};
+
 const styles = {
     marginRight20: {marginRight: '20px'},
     image: {
@@ -63,7 +67,7 @@ const styles = {
         alignSelf: 'flex-end',
     },
     spanColored: {
-        color: '#ff0065'
+        color: colors.spotlight
     },
 };
 
@@ -94,7 +98,7 @@ class App extends Component {
                         <span style={{color: 'white', fontSize: '3em', fontWeight: 100}}>Wellington</span>
                         <span style={{color: 'white', fontSize: '3em', fontWeight: 900}}>Oliveira</span>
                     </div>
-                    <div style={{display: 'flex', padding: '1em', flexDirection: 'row', color: '#ff0065'}}>
+                    <div style={{display: 'flex', padding: '1em', flexDirection: 'row', color: colors.spotlight}}>
                         <span style={styles.marginRight20}>Fullstack Dev</span>
                         <span style={styles.marginRight20}>Computer Engineer</span>
                         <span style={styles.marginRight20}>MSc student in software engineering</span>
