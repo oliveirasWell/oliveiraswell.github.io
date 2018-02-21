@@ -38,11 +38,11 @@ const socialLinks = {
         icon: 'gitlab',
         link: 'https://gitlab.com/oliveiraswell'
     },
-    wakatime: {
-        name: 'Wakatime',
-        icon: 'clock',
-        link: 'https://wakatime.com/@oliveiraswell'
-    }
+    // wakatime: {
+    //     name: 'Wakatime',
+    //     icon: 'alarm-clock',
+    //     link: 'https://wakatime.com/@oliveiraswell'
+    // }
 };
 
 const colors = {
@@ -70,18 +70,6 @@ const styles = {
         color: colors.spotlight
     },
 };
-
-
-const images = [
-    {
-        link: 'https://i.imgur.com/O7o9vbr.jpg',
-        size: '45%'
-    }, {
-        link: 'https://i.imgur.com/4V38bJJ.jpg',
-        size: '45%'
-    },
-];
-
 
 class App extends Component {
     render() {
@@ -154,17 +142,20 @@ class App extends Component {
                     <h1 style={{padding: '1em'}}>Links</h1>
                     <div style={{padding: '1em', display: 'flex', flexDirection: 'row', flexFlow: 'wrap'}}>
 
-                        <a className={'link'} style={{margin: '5px', fontWeight: '100'}} href='http://www.indext.com.br' target='_blank'>
+                        <a rel="noopener noreferrer"  className={'link'} style={{margin: '5px', fontWeight: '100'}} href='http://www.indext.com.br' target='_blank'>
                             <span style={{fontWeight: '100'}}> indext.com.br</span>
                         </a>
-                        <a className={'link'} style={{margin: '5px', fontWeight: '500'}} href='https://react-redux-firebase-ex.firebaseapp.com/welcome' target='_blank'>
+                        <a rel="noopener noreferrer"  className={'link'} style={{margin: '5px', fontWeight: '500'}} href='https://react-redux-firebase-ex.firebaseapp.com/welcome' target='_blank'>
                             <span> React-Redux-Firebase Automatic Boilplate</span>
                         </a>
-                        <a className={'link'} style={{margin: '5px', fontWeight: '800'}} href='https://expo.io/@oliveiraswell/react-native-redux-firebase-auto-boilerplate' target='_blank'>
+                        <a rel="noopener noreferrer"  className={'link'} style={{margin: '5px', fontWeight: '800'}} href='https://expo.io/@oliveiraswell/react-native-redux-firebase-auto-boilerplate' target='_blank'>
                             <span style={{fontWeight: '800'}}> React Native Boilerplate</span>
                         </a>
-                        <a className={'link'} style={{margin: '5px'}} href='http://lattes.cnpq.br/5210830815043936' target='_blank'>
+                        <a rel="noopener noreferrer"  className={'link'} style={{margin: '5px'}} href='http://lattes.cnpq.br/5210830815043936' target='_blank'>
                             <span style={{fontWeight: '100'}}> Lattes curriculum </span>
+                        </a>
+                        <a rel="noopener noreferrer"  className={'link'} style={{margin: '5px'}} href='https://wakatime.com/@oliveiraswell' target='_blank'>
+                            <span style={{fontWeight: '100'}}> Wakatime </span>
                         </a>
                     </div>
 
