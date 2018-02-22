@@ -38,11 +38,6 @@ const socialLinks = {
         icon: 'gitlab',
         link: 'https://gitlab.com/oliveiraswell'
     },
-    // wakatime: {
-    //     name: 'Wakatime',
-    //     icon: 'alarm-clock',
-    //     link: 'https://wakatime.com/@oliveiraswell'
-    // }
 };
 
 const links = {
@@ -94,7 +89,7 @@ class App extends Component {
         return (
             <div style={{display: 'flex', padding: '1em', flexDirection: 'column'}}>
                 <div style={{width: '100%'}}>
-                    <div style={{textTransform: 'uppercase', ...styles.flexDiv}}>
+                    <div style={{textTransform: 'uppercase', ...styles.flexDiv, flexFlow: 'wrap'}}>
 
                         <img className={'black-white-img'} src={require('./perfil.jpg')}
                              alt={'Here I\'am'}
@@ -159,7 +154,6 @@ class App extends Component {
                 <div style={{minWidth: '25%%', maxWidth: '25%', padding: '0.5em', position: 'absolute', right: 0, textAlign: 'right'}}>
                     <h1 style={{padding: '1em'}}>Links</h1>
                     <div style={{padding: '1em', display: 'flex', flexDirection: 'row', flexFlow: 'wrap'}}>
-
                         {
                             Object.values(links).map( (link, index) =>
                                 <a key={index} rel="noopener noreferrer" className={'link'} style={{margin: '5px'}}
@@ -168,7 +162,6 @@ class App extends Component {
                                 </a>
                             )
                         }
-
                     </div>
 
                 </div>
