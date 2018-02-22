@@ -149,7 +149,7 @@ class App extends Component {
                         <br/>
                         <br/>
                         <span style={{color: 'white'}}>
-                            Want to send a message? Be my gest! Send an <a className={'link'} href="mailto:webmaster@example.com">e-mail</a>.
+                            Want to send a message? Be my gest! Send an <a className={'link'} href="mailto:well.oliveira.snt@gmail.com">e-mail</a>.
                         </span>
 
                     </div>
