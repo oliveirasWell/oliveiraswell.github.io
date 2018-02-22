@@ -81,7 +81,6 @@ const styles = {
     flexDiv: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'flex-start',
         alignSelf: 'flex-end',
     },
     spanColored: {
@@ -99,7 +98,7 @@ class App extends Component {
         return (
             <div style={{display: 'flex', padding: '1em', flexDirection: 'column'}}>
                 <div style={{width: '100%'}}>
-                    <div style={{textTransform: 'uppercase', ...styles.flexDiv, flexFlow: 'wrap'}}>
+                    <div className={'justifyResponsive'} style={{textTransform: 'uppercase', ...styles.flexDiv, flexFlow: 'wrap'}}>
 
                         <img className={'black-white-img'} src={require('./perfil.jpg')}
                              alt={'Here I\'am'}
@@ -131,7 +130,7 @@ class App extends Component {
                         }
                     </div>
 
-                    <div style={{minWidth: '50%', maxWidth: '50%', padding: '1em'}}>
+                    <div className={'resumeContainer'} style={{minWidth: '50%', padding: '1em'}}>
                         <h1>Hi there</h1>
                         <span style={{color: 'white'}}>
                         Thank you to come here, my name is Wellington, I'm a computer engineer graduated from UFMS - Campo Grande - Brazil, MSc student in software engineering at UFMS.
@@ -161,7 +160,7 @@ class App extends Component {
 
                 </div>
 
-                <div style={{minWidth: '25%%', maxWidth: '25%', padding: '0.5em', position: 'absolute', right: 0, textAlign: 'right'}}>
+                <div className={'linkFixedRight'} style={{minWidth: '25%%', padding: '0.5em', textAlign: 'right'}}>
                     <h1 style={{padding: '1em'}}>Links</h1>
                     <div style={{padding: '1em', display: 'flex', flexDirection: 'row', flexFlow: 'wrap'}}>
                         {

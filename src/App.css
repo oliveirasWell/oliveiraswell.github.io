@@ -38,3 +38,44 @@ span {
     filter: grayscale(0%);
     transition: filter 200ms ease-in-out;
 }
+
+@media (min-width: 500px) {
+    .linkFixedRight {
+        position: absolute;
+        right: 0;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 200px) {
+    .linkFixedRight {
+        position: unset;
+        display: flex;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    .resumeContainer {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .resumeContainer {
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 500px) {
+    .justifyResponsive {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .justifyResponsive {
+        justify-content: center;
+    }
+}
