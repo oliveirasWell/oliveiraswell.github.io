@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import './App.css';
 import FontAwesome from 'react-fontawesome';
 
+
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-114647620-1');
+
 const socialLinks = {
     twitter: {
         name: 'Twitter',
@@ -85,6 +90,11 @@ const styles = {
 };
 
 class App extends Component {
+
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    };
+
     render() {
         return (
             <div style={{display: 'flex', padding: '1em', flexDirection: 'column'}}>
