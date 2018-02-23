@@ -140,7 +140,7 @@ class App extends Component {
                         <br/>
                         <span style={{color: 'white'}}>
                             Current I work as Developer at <a className={'link'} href={'https://wwww.tecsinapse.com.br'}>Tecsinapse</a>, also I'm a co-founder (and fullstack developer, software engineer and etc etc etc) of the startup <a
-                            className={'link'} href={'www.indext.com.br'}>Indext</a>, with focus on capture and analyse data of bovines.
+                            className={'link'} href={'https://www.indext.com.br'}>Indext</a>, with focus on capture and analyse data of bovines.
                         </span>
 
                         <br/>
