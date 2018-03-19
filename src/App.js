@@ -127,9 +127,10 @@ class App extends Component {
                     </div>
                 </div>
 
-                <div style={{display: 'flex', padding: '1em', flexDirection: 'row'}}>
+                <div style={{display: 'flex', padding: '1em', flexDirection: 'row'}} >
 
-                    <div style={{display: 'flex', padding: '1em', flexDirection: 'column', maxWidth: '15%', flex: '1'}}>
+                    <div style={{display: 'flex', padding: '1em', flexDirection: 'column', maxWidth: '15%', flex: '1', margin: '5px'}}
+                         className={'no-display-mobile'}>
                         {
                             Object.values(socialLinks).map((item, index) => {
                                 return <div key={index}>
@@ -185,6 +186,22 @@ class App extends Component {
                         }
                     </div>
 
+                </div>
+
+
+                <div style={{display: 'flex', padding: '1em', flexDirection: 'column', margin: '5px', textAlign: 'center'}}
+                     className={'only-display-mobile'}>
+                    {
+                        Object.values(socialLinks).map((item, index) => {
+                            return <div key={index}>
+                                <a href={item.link} className={'link'}>
+                                    <FontAwesome name={item.icon} size={'2x'} style={{margin: '10px'}}/>
+                                    <br/>
+                                    {item.name}
+                                </a>
+                            </div>
+                        })
+                    }
                 </div>
 
             </div>

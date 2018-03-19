@@ -79,3 +79,15 @@ span {
         justify-content: center;
     }
 }
+
+@media (max-width: 500px) {
+    .no-display-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .only-display-mobile {
+        display: none !important;
+    }
+}
