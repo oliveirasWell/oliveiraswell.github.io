@@ -73,6 +73,9 @@ const links = {
     }, react_firebase: {
         link: 'https://blog.tecsinapse.com.br/criando-uma-aplica%C3%A7%C3%A3o-react-firebase-passo-a-passo-9ebc5a8a442f',
         text: 'Creating a React + Firebase web app step by step (Portuguese Post at Medium)'
+    }, react_redux_firebase: {
+        link: 'https://blog.tecsinapse.com.br/utilizando-react-redux-firebase-2bf93ea9f422',
+        text: 'Creating a React + Redux + Firebase app (Portuguese Post at Medium)'
     },
 };
 const colors = {
