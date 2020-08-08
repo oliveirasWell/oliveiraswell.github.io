@@ -29,13 +29,13 @@ span {
 
 .black-white-img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: filter 200ms ease-in-out;
 }
 
 .black-white-img:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     transition: filter 200ms ease-in-out;
 }
 
@@ -43,7 +43,7 @@ span {
     .linkFixedRight {
         position: absolute;
         right: 0;
-        max-width: 25%;
+        max-width: 45%;
     }
 }
 

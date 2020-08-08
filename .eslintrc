@@ -1,0 +1,31 @@
+{
+  "plugins": ["prettier", "react-hooks"],
+  "extends": [
+    "react-app",
+    "@tecsinapse/tecsinapse-js"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+        ]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-cycle": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".mdx"]
+      }
+    ]
+  }
+}
