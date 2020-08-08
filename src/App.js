@@ -1,5 +1,5 @@
-/* eslint-disable  no-inline-styles/no-inline-styles */
-/* eslint-disable  react/no-unescaped-entities */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-inline-styles/no-inline-styles */
 import React from "react";
 import ReactGA from "react-ga";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,6 +82,21 @@ const App = () => {
     () => ReactGA.pageview(window.location.pathname + window.location.search),
     []
   );
+
+  const styleContasiner = {
+    padding: "1em",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    flexBasis: "50%",
+  };
+  const socialLinks2style = {
+    display: "flex",
+    padding: "1em",
+    flexDirection: "column",
+    margin: "5px",
+    textAlign: "center",
+  };
 
   return (
     <div style={PageContainerStyle}>
@@ -190,15 +205,7 @@ const App = () => {
             ))}
           </div>
 
-          <div
-            style={{
-              padding: "1em",
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              flexBasis: "50%",
-            }}
-          >
+          <div style={styleContasiner}>
             {Object.values(Links).map((link, index) => (
               <a
                 key={index}
@@ -218,16 +225,7 @@ const App = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          padding: "1em",
-          flexDirection: "column",
-          margin: "5px",
-          textAlign: "center",
-        }}
-        className="only-display-mobile"
-      >
+      <div style={socialLinks2style} className="only-display-mobile">
         {Object.values(socialLinks).map((item, index) => (
           <div key={index}>
             <a href={item.link} className="link">

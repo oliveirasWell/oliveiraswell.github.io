@@ -16,10 +16,6 @@ export const Links = {
     link: "https://wakatime.com/@oliveiraswell",
     text: "Wakatime",
   },
-  bep: {
-    link: "http://indext.com.br/bep/",
-    text: "BEP - Bovine Electronic Platform",
-  },
   meteor_hosting: {
     link:
       "https://blog.tecsinapse.com.br/hospedando-aplicações-meteor-no-aws-f39996a28419",
