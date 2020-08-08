@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-inline-styles/no-inline-styles */
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 import ReactGA from "react-ga";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +9,7 @@ import "./App.css";
 import perfil from "./perfil.jpg";
 
 import { socialLinks } from "./socialLinks";
-import { Links } from "./links";
+import { links } from "./links";
 
 const colors = {
   spotlight: "#ff0065",
@@ -40,14 +41,14 @@ const PageContainerStyle = {
   padding: "1em",
   flexDirection: "column",
 };
-const pageHeaderStyle = { width: "100%" };
+const pageHeaderStyle = { maxWidth: "100%", padding: "0 2em" };
 const fotoPerfilStyle = {
   textTransform: "uppercase",
   ...styles.flexDiv,
   flexFlow: "wrap",
 };
-const styleWellington = { color: "white", fontSize: "3em", fontWeight: 100 };
-const styleOliveira = { color: "white", fontSize: "3em", fontWeight: 900 };
+const styleWellington = { color: "white", fontSize: "3rem", fontWeight: 100 };
+const styleOliveira = { color: "white", fontSize: "3rem", fontWeight: 900 };
 const styleBody = { display: "flex", padding: "1em", flexDirection: "row" };
 
 const socialLinksStyle = {
@@ -62,7 +63,6 @@ const socialLinksStyle = {
 
 const styleSubTittle = {
   display: "flex",
-  padding: "1em",
   flexDirection: "row",
   color: colors.spotlight,
 };
@@ -76,27 +76,61 @@ const styleSocialItem = {
   textAlign: "right",
   justifyContent: "flex-end",
 };
+const styleContasiner = {
+  padding: "1em",
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  flexBasis: "50%",
+};
+const socialLinks2style = {
+  display: "flex",
+  padding: "1em",
+  flexDirection: "column",
+  margin: "5px",
+  textAlign: "center",
+};
+
+const SocialLinks = ({ textAlign = "right", justifyContent = "flex-end" }) =>
+  Object.values(socialLinks).map((item, index) => (
+    <div key={index} style={{ textAlign }}>
+      <a href={item.link} className="link">
+        <div style={{ ...styleSocialItem, justifyContent }}>
+          {item.name}
+          <div style={{ minWidth: 55, textAlign: "center" }}>
+            <FontAwesomeIcon
+              icon={item.icon}
+              size="2x"
+              style={{ margin: "10px" }}
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+  ));
+
+const Links = () =>
+  Object.values(links).map((link, index) => (
+    <a
+      key={index}
+      rel="noopener noreferrer"
+      className="link"
+      style={{ margin: "5px" }}
+      href={link.link}
+      target="_blank"
+    >
+      <span style={{ fontWeight: index % 2 === 0 ? "200" : "800" }}>
+        {" "}
+        {link.text}{" "}
+      </span>
+    </a>
+  ));
 
 const App = () => {
   React.useEffect(
     () => ReactGA.pageview(window.location.pathname + window.location.search),
     []
   );
-
-  const styleContasiner = {
-    padding: "1em",
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    flexBasis: "50%",
-  };
-  const socialLinks2style = {
-    display: "flex",
-    padding: "1em",
-    flexDirection: "column",
-    margin: "5px",
-    textAlign: "center",
-  };
 
   return (
     <div style={PageContainerStyle}>
@@ -108,16 +142,13 @@ const App = () => {
             alt={"Here I'am"}
             style={styles.image}
           />
-
           <span style={styleWellington}>Wellington</span>
           <span style={styleOliveira}>Oliveira</span>
         </div>
-        <div style={styleSubTittle}>
+        <div style={styleSubTittle} className="resumeContainer">
           <span style={styles.marginRight20}>Fullstack Dev</span>
           <span style={styles.marginRight20}>Computer Engineer</span>
-          <span style={styles.marginRight20}>
-            MSc student in software engineering
-          </span>
+          <span style={styles.marginRight20}>MSc student in Big Data</span>
         </div>
       </div>
 
@@ -171,9 +202,8 @@ const App = () => {
           <span style={{ color: "white" }}>
             Want to send a message? Be my gest! Send an{" "}
             <a className="link" href="mailto:well.oliveira.snt@gmail.com">
-              e-mail
+              e-mail <span>😉</span>
             </a>
-            .
           </span>
         </div>
       </div>
@@ -187,58 +217,17 @@ const App = () => {
 
         <div style={{ display: "flex" }}>
           <div style={socialLinksStyle} className="no-display-mobile">
-            {Object.values(socialLinks).map((item, index) => (
-              <div key={index} style={{ textAlign: "right" }}>
-                <a href={item.link} className="link">
-                  <div style={styleSocialItem}>
-                    {item.name}
-                    <div style={{ minWidth: 55, textAlign: "center" }}>
-                      <FontAwesomeIcon
-                        icon={item.icon}
-                        size="2x"
-                        style={{ margin: "10px" }}
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
-            ))}
+            <SocialLinks />
           </div>
 
           <div style={styleContasiner}>
-            {Object.values(Links).map((link, index) => (
-              <a
-                key={index}
-                rel="noopener noreferrer"
-                className="link"
-                style={{ margin: "5px" }}
-                href={link.link}
-                target="_blank"
-              >
-                <span style={{ fontWeight: index % 2 === 0 ? "200" : "800" }}>
-                  {" "}
-                  {link.text}{" "}
-                </span>
-              </a>
-            ))}
+            <Links />
           </div>
         </div>
       </div>
 
       <div style={socialLinks2style} className="only-display-mobile">
-        {Object.values(socialLinks).map((item, index) => (
-          <div key={index}>
-            <a href={item.link} className="link">
-              <FontAwesomeIcon
-                icon={item.icon}
-                size="2x"
-                style={{ margin: "10px" }}
-              />
-              <br />
-              {item.name}
-            </a>
-          </div>
-        ))}
+        <SocialLinks textAlign="center" justifyContent="center" />
       </div>
     </div>
   );
