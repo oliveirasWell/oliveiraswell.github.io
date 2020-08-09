@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "homepage": "https://oliveiraswell.github.io",
   "private": true,
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/oliveiraswell/oliveiraswell.github.io"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
