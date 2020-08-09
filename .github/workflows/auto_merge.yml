@@ -1,9 +1,5 @@
 name: auto-merge
 
-on:
-  push:
-    branches: [ master ]
-
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
