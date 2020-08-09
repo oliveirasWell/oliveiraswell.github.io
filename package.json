@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/oliveiraswell/oliveiraswell.github.io"
+    "url" : "https://github.com/oliveiraswell/oliveiraswell.github.io.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
