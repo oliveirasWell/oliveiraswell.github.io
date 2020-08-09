@@ -174,8 +174,8 @@ const App = () => {
           <span style={{ color: "white" }}>
             After five years of experience of software development on Java and
             Javascript systems and also IoT devices I'm a fullstack professional
-            that can design, develop, build and release aplications of several
-            domains and tecnologies domains.
+            that can design, develop, build and release applications of several
+            domains and technologies domains.
           </span>
 
           <br />
@@ -192,7 +192,7 @@ const App = () => {
             <span style={styles.spanColored}>Code quality</span>,{" "}
             <span style={styles.spanColored}>Tests automation</span> and{" "}
             <span style={styles.spanColored}>
-              General enviroment automation
+              General environment automation
             </span>{" "}
             from scripts to start app on startup to residential automation.
           </span>

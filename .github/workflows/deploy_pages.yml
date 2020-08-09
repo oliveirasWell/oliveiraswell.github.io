@@ -19,6 +19,9 @@ jobs:
     - name: Install
       run: yarn
 
+    - name: Clean
+      run: npx rimraf ./build
+
     - name: Code Quality
       run: yarn eslint:fix
 
