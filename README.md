@@ -5,9 +5,9 @@ To use this template, add `--template @oliveiraswell/cra-template-ghpages` when 
 For example:
 
 ```sh
-npx create-react-app my-app --template @oliveiraswell/cra-template-ghpages
+npx create-react-app my-app --template @oliveiraswell/cra-template-gh-pages
 
 # or
 
-yarn create react-app my-app --template @oliveiraswell/cra-template-ghpages
+yarn create react-app my-app --template @oliveiraswell/cra-template-gh-pages
 ```
