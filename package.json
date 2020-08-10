@@ -1,28 +1,23 @@
 {
-  "name": "oliveiraswell.github.io",
-  "version": "0.1.0",
+  "name": "oliveiraswell-cra-template-gh-pages",
+  "version": "1.0.0",
   "homepage": "https://oliveiraswell.github.io",
-  "private": true,
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/oliveiraswell/oliveiraswell.github.io.git"
+    "type": "git",
+    "url": "https://github.com/oliveiraswell/oliveiraswell-cra-template-gh-pages"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ga": "^3.1.2",
-    "react-scripts": "1.1.1"
+  "license": "MIT",
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.11"
   },
-  "scripts": {
-    "eslint:fix": "eslint ./src --ext .js --fix",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "main": "template.json",
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@tecsinapse/eslint-config-tecsinapse-js": "^3.0.3",
@@ -32,8 +27,7 @@
     "eslint-plugin-react": "^7.20.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2"
+    "prettier": "^2.0.5"
   },
   "husky": {
     "hooks": {
@@ -47,8 +41,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "browserslist": [
-    "defaults"
-  ]
+  }
 }
