@@ -1,4 +1,4 @@
-# oliveiraswell-cra-template-gh-pages
+# @oliveiraswell/cra-template-gh-pages
 
 To use this template, add `--template @oliveiraswell/cra-template-ghpages` when creating a new app.
 
