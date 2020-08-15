@@ -4,8 +4,8 @@
   "homepage": "https://oliveiraswell.github.io",
   "private": true,
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/oliveiraswell/oliveiraswell.github.io.git"
+    "type": "git",
+    "url": "https://github.com/oliveiraswell/oliveiraswell.github.io.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -15,7 +15,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.1.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "eslint:fix": "eslint ./src --ext .js --fix",
@@ -25,6 +26,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "@tecsinapse/eslint-config-tecsinapse-js": "^3.0.3",
     "eslint": "6.6.0",
     "eslint-config-prettier": "^6.11.0",

@@ -1,4 +1,4 @@
-export const links = {
+export const linksList = {
   react_native_redux_firebase_ex: {
     link:
       "https://expo.io/@oliveiraswell/react-native-redux-firebase-auto-boilerplate",

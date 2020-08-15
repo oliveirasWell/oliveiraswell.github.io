@@ -1,5 +1,8 @@
 {
-  "plugins": ["prettier", "react-hooks"],
+  "plugins": [
+    "prettier",
+    "react-hooks"
+  ],
   "extends": [
     "react-app",
     "@tecsinapse/tecsinapse-js"
@@ -24,7 +27,19 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx", ".mdx"]
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".mdx"
+        ]
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "@app/**/src"
+        ]
       }
     ]
   }
