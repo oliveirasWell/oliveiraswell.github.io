@@ -1,7 +1,7 @@
 name: auto-merge
 
-on:
-  push:
+on:	
+  push:	
     branches: [ master ]
 
 jobs:
