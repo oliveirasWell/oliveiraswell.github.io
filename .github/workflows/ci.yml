@@ -1,11 +1,10 @@
-name: CI
+name: CI pipeline
 
 on:
   push:
     branches: [ master ]
 
 jobs:
-
   setup:
     runs-on: ubuntu-latest
     steps:
@@ -16,6 +15,6 @@ jobs:
         run: npx rimraf ./build
       - name: lint
         run: yarn eslint:fix
-      - name: lint
+      - name: test
         run: yarn test
 

@@ -1,4 +1,4 @@
-name: CD
+name: CD pipeline
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install
         run: yarn
-      - name: Install
+      - name: Build
         run: yarn build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
