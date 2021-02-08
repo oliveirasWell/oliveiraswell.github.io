@@ -4,32 +4,44 @@ on:
   push:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+
+  setup:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Install
+        run: yarn
+      - name: Clean
+        run: npx rimraf ./build
 
-    - name: Install
-      run: yarn
+  code-quality:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+        run: yarn eslint:fix
 
-    - name: Clean
-      run: npx rimraf ./build
+  test:
+    needs: code-quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+        run: yarn test
 
-    - name: Code Quality
-      run: yarn eslint:fix
+  build:
+    needs: code-quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: yarn build
 
-    - name: Build
-      run: yarn build
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
