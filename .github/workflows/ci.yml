@@ -1,0 +1,21 @@
+name: Deploy on CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: yarn
+      - name: Clean
+        run: npx rimraf ./build
+      - name: lint
+        run: yarn eslint:fix
+      - name: lint
+        run: yarn test
+
