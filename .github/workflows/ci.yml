@@ -16,5 +16,5 @@ jobs:
       - name: lint
         run: yarn eslint:fix
       - name: test
-        run: yarn test-break
+        run: yarn test
 
