@@ -12,7 +12,7 @@ export const socialLinksList = {
   twitter: {
     name: "Twitter",
     icon: faTwitter,
-    link: "https:/twitter.com/oliveiraswell",
+    link: "https://twitter.com/oliveiraswell",
   },
   facebook: {
     name: "Facebook",
