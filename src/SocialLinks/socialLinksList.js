@@ -28,7 +28,7 @@ export const socialLinksList = {
     name: "linkedin",
     icon: faLinkedinIn,
     link:
-      "https://www.linkedin.com/in/wellington-de-oliveira-dos-santos-5729737b/",
+      "https://www.linkedin.com/in/wellington-oliveira-5729737b/",
   },
   github: {
     name: "Github",
