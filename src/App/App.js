@@ -27,15 +27,16 @@ import {
   resumeDescriptionTextStyled,
   resumeContainerStyled,
 } from "../utils/styles/styles";
+
 import GlobalStyle from "../utils/styles/GlobalStyle";
+
+const interrestsContainerStyles = { color: "white" };
 
 const App = () => {
   React.useEffect(
     () => ReactGA.pageview(window.location.pathname + window.location.search),
     []
   );
-
-  const interrestsContainerStyles = { color: "white" };
 
   return (
     <React.Fragment>
@@ -67,11 +68,11 @@ const App = () => {
             <span style={resumeDescriptionTextStyled}>
               Thank you to come here, my name is Wellington, I'm a computer
               engineer graduated from UFMS - Campo Grande - Brazil, MSc student
-              in big data at UFSCAR. Current I work as Senior Developer at{" "}
-              <a className="link" href="https://dextra.com.br/pt/">
-                Dextra
+              in big data at UFSCAR. Current I work as Senior Software Engineer at{" "}
+              <a className="link" href="https://www.bairesdev.com/">
+                Bairesdev
               </a>
-              .
+              provinding SE services around the world
             </span>
 
             <br />
