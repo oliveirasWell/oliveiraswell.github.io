@@ -72,7 +72,7 @@ const App = () => {
               <a className="link" href="https://www.bairesdev.com/">
                 Bairesdev
               </a>
-              provinding SE services around the world
+              {" "}provinding SE services around the world
             </span>
 
             <br />
