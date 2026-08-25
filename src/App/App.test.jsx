@@ -35,3 +35,28 @@ test("toggles the copy between english and portuguese", async () => {
   expect(document.documentElement.lang).toBe("pt-BR");
   expect(window.localStorage.getItem("lang")).toBe("pt");
 });
+
+test("renders every link group with links under it", () => {
+  render(<App />);
+
+  Object.values(content.en.linkGroups).forEach((title) => {
+    const heading = screen.getByRole("heading", { name: title });
+
+    expect(heading.parentElement.querySelectorAll("a").length).toBeGreaterThan(
+      0,
+    );
+  });
+});
+
+test("translates the link group titles", async () => {
+  const user = userEvent.setup();
+  render(<App />);
+
+  await user.click(
+    screen.getByRole("button", { name: content.en.switchLabel }),
+  );
+
+  expect(
+    screen.getByRole("heading", { name: content.pt.linkGroups.projects }),
+  ).toBeInTheDocument();
+});

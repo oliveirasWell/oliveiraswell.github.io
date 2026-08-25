@@ -137,7 +137,7 @@ const App = () => {
             </div>
 
             <div style={linksListStyle}>
-              <Links />
+              <Links titles={t.linkGroups} />
             </div>
           </div>
         </div>

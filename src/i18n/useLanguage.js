@@ -11,9 +11,8 @@ const readStored = () => {
   }
 };
 
-const initialLanguage = () =>
-  readStored() ??
-  (navigator.language?.toLowerCase().startsWith("pt") ? "pt" : "en");
+// English is the default; the browser locale is deliberately ignored.
+const initialLanguage = () => readStored() ?? "en";
 
 export const useLanguage = () => {
   const [language, setLanguage] = useState(initialLanguage);

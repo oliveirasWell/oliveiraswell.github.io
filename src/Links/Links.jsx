@@ -1,22 +1,23 @@
-import styled from "styled-components";
-import { linksList } from "./linksList";
+import { linkGroups } from "./linksList";
+import { linkGroupStyle, linkGroupTitleStyle } from "../utils/styles/styles";
 
-const linkStyle = { margin: "5px" };
+const linkStyle = { display: "block", fontWeight: 300, margin: "5px" };
 
-const Text = styled.span`
-  font-weight: ${({ $index }) => ($index % 2 === 0 ? 200 : 800)};
-`;
-
-export const Links = () =>
-  Object.entries(linksList).map(([key, link], index) => (
-    <a
-      key={key}
-      rel="noopener noreferrer"
-      className="link"
-      style={linkStyle}
-      href={link.link}
-      target="_blank"
-    >
-      <Text $index={index}> {link.text} </Text>
-    </a>
+export const Links = ({ titles }) =>
+  linkGroups.map((group) => (
+    <div key={group.id} style={linkGroupStyle}>
+      <h2 style={linkGroupTitleStyle}>{titles[group.id]}</h2>
+      {group.items.map((item) => (
+        <a
+          key={item.link}
+          rel="noopener noreferrer"
+          className="link"
+          style={linkStyle}
+          href={item.link}
+          target="_blank"
+        >
+          {item.text}
+        </a>
+      ))}
+    </div>
   ));

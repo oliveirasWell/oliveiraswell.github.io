@@ -122,7 +122,20 @@ export const languageToggleStyle = {
 export const headerRowStyle = {
   display: "flex",
   alignItems: "center",
+  flexWrap: "wrap",
   gap: "1em",
   position: "relative",
   zIndex: 1,
+};
+
+export const linkGroupStyle = { padding: "0 1em 1em" };
+
+export const linkGroupTitleStyle = {
+  color: colors.spotlight,
+  fontSize: "0.9rem",
+  fontWeight: 500,
+  letterSpacing: "0.1em",
+  margin: "0 0 0.5em",
+  padding: 0,
+  textTransform: "uppercase",
 };
