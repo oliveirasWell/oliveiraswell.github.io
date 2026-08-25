@@ -25,9 +25,9 @@ export const socialLinksList = {
     link: "https://medium.com/@oliveiraswell",
   },
   linkedin: {
-    name: "linkedin",
+    name: "LinkedIn",
     icon: faLinkedinIn,
-    link: "https://www.linkedin.com/in/wellington-de-oliveira-dos-santos-5729737b/",
+    link: "https://www.linkedin.com/in/oliveiraswell/",
   },
   github: {
     name: "Github",

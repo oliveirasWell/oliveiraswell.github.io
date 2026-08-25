@@ -104,3 +104,25 @@ export const linksPanelTitleStyle = {
 };
 
 export const linksContainerStyle = { display: "flex" };
+
+export const languageToggleStyle = {
+  background: "none",
+  border: `1px solid ${colors.spotlight}`,
+  borderRadius: "4px",
+  color: colors.spotlight,
+  cursor: "pointer",
+  font: "inherit",
+  fontWeight: 500,
+  marginLeft: "auto",
+  padding: "0.25em 0.75em",
+};
+
+// The links panel is absolutely positioned at right: 0 and would otherwise
+// paint over the toggle and swallow its clicks, so this row is lifted above it.
+export const headerRowStyle = {
+  display: "flex",
+  alignItems: "center",
+  gap: "1em",
+  position: "relative",
+  zIndex: 1,
+};
