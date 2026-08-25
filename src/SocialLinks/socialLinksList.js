@@ -12,7 +12,7 @@ export const socialLinksList = {
   twitter: {
     name: "Twitter",
     icon: faTwitter,
-    link: "https:/twitter.com/oliveiraswell",
+    link: "https://twitter.com/oliveiraswell",
   },
   facebook: {
     name: "Facebook",
@@ -27,8 +27,7 @@ export const socialLinksList = {
   linkedin: {
     name: "linkedin",
     icon: faLinkedinIn,
-    link:
-      "https://www.linkedin.com/in/wellington-de-oliveira-dos-santos-5729737b/",
+    link: "https://www.linkedin.com/in/wellington-de-oliveira-dos-santos-5729737b/",
   },
   github: {
     name: "Github",
