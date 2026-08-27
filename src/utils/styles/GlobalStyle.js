@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   
   h1,
   h2 {
-      font-weight: 300;
+      font-weight: 100;
       color: #c0c0c0;
   }
   
