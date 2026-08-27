@@ -5,6 +5,7 @@ coverage/
 .DS_Store
 .idea/
 .serena/
+.claude/
 
 .env.local
 .env.*.local

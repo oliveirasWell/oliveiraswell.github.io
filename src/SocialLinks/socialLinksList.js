@@ -1,5 +1,4 @@
 import {
-  faFacebookF,
   faGithub,
   faGitlab,
   faInstagram,
@@ -13,11 +12,6 @@ export const socialLinksList = {
     name: "Twitter",
     icon: faTwitter,
     link: "https://twitter.com/oliveiraswell",
-  },
-  facebook: {
-    name: "Facebook",
-    icon: faFacebookF,
-    link: "https://www.facebook.com/well.oliveira.snt",
   },
   medium: {
     name: "Medium",

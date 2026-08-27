@@ -1,6 +1,7 @@
 import perfil from "../utils/assets/perfil.jpg";
 import { Links } from "../Links/Links";
 import { SocialLinks } from "../SocialLinks/SocialLinks";
+import { Repos } from "../Repos/Repos";
 import GlobalStyle from "../utils/styles/GlobalStyle";
 import { company, content } from "../i18n/content";
 import { useLanguage } from "../i18n/useLanguage";
@@ -125,6 +126,8 @@ const App = () => {
                 {t.contactLink} <span>😉</span>
               </a>
             </span>
+
+            <Repos t={t} language={language} />
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 export const colors = {
   spotlight: "#ff0065",
   text: "#ffffff",
+  muted: "#c0c0c0",
 };
 
 export const whiteTextStyle = { color: colors.text };
@@ -139,3 +140,44 @@ export const linkGroupTitleStyle = {
   padding: 0,
   textTransform: "uppercase",
 };
+
+export const reposSectionStyle = { marginTop: "1em" };
+
+export const reposSubtitleStyle = {
+  color: colors.muted,
+  fontSize: "0.85rem",
+  fontWeight: 300,
+};
+
+export const reposGridStyle = {
+  display: "grid",
+  gap: "0.75em",
+  gridTemplateColumns: "repeat(auto-fill, minmax(210px, 1fr))",
+  margin: "1em 0",
+};
+
+export const repoCardStyle = {
+  border: "1px solid #2a2626",
+  borderRadius: "4px",
+  display: "flex",
+  flexDirection: "column",
+  gap: "0.35em",
+  padding: "0.85em",
+};
+
+export const repoNameStyle = { fontWeight: 500, wordBreak: "break-word" };
+
+export const repoDescriptionStyle = {
+  color: colors.muted,
+  fontSize: "0.85rem",
+  fontWeight: 300,
+};
+
+export const repoMetaStyle = {
+  color: colors.spotlight,
+  fontSize: "0.75rem",
+  fontWeight: 400,
+  marginTop: "auto",
+};
+
+export const reposAllStyle = { fontSize: "0.85rem", fontWeight: 300 };
