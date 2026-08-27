@@ -1,52 +1,84 @@
 export const colors = {
   spotlight: "#ff0065",
+  text: "#ffffff",
+  muted: "#c0c0c0",
 };
-export const styles = {
-  marginRight20: { marginRight: "20px" },
-  image: {
-    width: "3em",
-    height: "3em",
-    borderRadius: "50%",
-    backgroundPosition: "center",
-    backgroundSize: "100% auto",
-    backgroundRepeat: "no-repeat",
-    margin: "0 5px 5px",
-  },
-  flexDiv: {
-    display: "flex",
-    alignItems: "center",
-    alignSelf: "flex-end",
-  },
-  spanColored: {
-    color: colors.spotlight,
-  },
+
+export const whiteTextStyle = { color: colors.text };
+// Weight is reserved for the accent colour, so it carries the emphasis alone.
+export const spotlightTextStyle = { color: colors.spotlight, fontWeight: 500 };
+
+// Sized in rem, not em: an em would ride on the body font size and shrink the
+// photo whenever that is tuned. object-fit is what frames an <img> - the
+// background-* properties that used to sit here never applied to one.
+export const imageStyle = {
+  width: "4rem",
+  height: "4rem",
+  borderRadius: "50%",
+  objectFit: "cover",
+  margin: "0 5px 5px",
 };
-export const PageContainerStyle = {
+
+// The name is the page heading now; it only needs the default h1 spacing gone.
+export const nameHeadingStyle = { margin: 0 };
+
+// The first thing a recruiter filters on, so it sits directly under the roles.
+export const availabilityStyle = {
+  color: colors.muted,
+  fontSize: "0.85rem",
+  fontWeight: 300,
+  marginTop: "0.4em",
+};
+
+export const pageContainerStyle = {
   display: "flex",
   padding: "1em",
   flexDirection: "column",
 };
+
 export const pageHeaderStyle = { maxWidth: "100%", padding: "0 2em" };
-export const fotoPerfilStyle = {
+
+export const profileStyle = {
+  display: "flex",
+  alignItems: "center",
+  alignSelf: "flex-end",
   textTransform: "uppercase",
-  ...styles.flexDiv,
   flexFlow: "wrap",
 };
-export const styleTitle = {
-  color: "white",
+
+export const firstNameStyle = {
+  ...whiteTextStyle,
   fontSize: "3rem",
   fontWeight: 100,
 };
-export const styleOliveira = {
-  color: "white",
+
+export const lastNameStyle = {
+  ...whiteTextStyle,
   fontSize: "3rem",
   fontWeight: 900,
 };
-export const styleBody = {
+
+// Without flexWrap the roles never move to a new line - they just shrink into
+// narrow columns and wrap inside themselves. gap on the container beats a
+// margin per item, which would leave a stray gap at the end of every line.
+export const subtitleStyle = {
+  color: colors.spotlight,
+  columnGap: "20px",
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  fontWeight: 500,
+  rowGap: "0.2em",
+};
+
+export const bodyStyle = {
   display: "flex",
   padding: "1em",
   flexDirection: "row",
 };
+
+export const resumeContainerStyle = { minWidth: "50%", padding: "1em" };
+
 export const socialLinksStyle = {
   display: "flex",
   padding: "1em",
@@ -56,12 +88,8 @@ export const socialLinksStyle = {
   paddingRight: 0,
   flexGrow: 1,
 };
-export const styleSubTittle = {
-  display: "flex",
-  flexDirection: "row",
-  color: colors.spotlight,
-};
-export const styleSocialItem = {
+
+export const socialItemStyle = {
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
@@ -71,14 +99,15 @@ export const styleSocialItem = {
   justifyContent: "flex-end",
 };
 
-export const styleContasiner = {
+export const linksListStyle = {
   padding: "1em",
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
   flexBasis: "50%",
 };
-export const socialLinks2style = {
+
+export const socialLinksMobileStyle = {
   display: "flex",
   padding: "1em",
   flexDirection: "column",
@@ -86,14 +115,125 @@ export const socialLinks2style = {
   textAlign: "center",
 };
 
-export const linkFixedRightstyle = { minWidth: "25%%", padding: "0.5em" };
-export const linkFixedRightH1 = {
-  padding: "1em",
-  flexGrow: 1,
-  textAlign: "center",
+export const linksPanelStyle = { minWidth: "25%", padding: "0.5em" };
+
+// Sits inside the links column as a flex row of its own. The indent is in rem,
+// not em: the group headings below indent by 1em of the 0.9rem body text, and
+// an em here would resolve against this heading's own much larger font size.
+export const linksPanelTitleStyle = {
+  flexBasis: "100%",
+  margin: 0,
+  padding: "0 0.9rem 0.5rem",
 };
-export const socialLinksContainerMobile = { display: "flex" };
-export const emailStyle = { color: "white" };
-export const colorWhiteStyles = { color: "white" };
-export const resumeDescriptionTextStyled = { color: "white" };
-export const resumeContainerStyled = { minWidth: "50%", padding: "1em" };
+
+export const linksContainerStyle = { display: "flex" };
+
+const languageOptionBase = {
+  background: "none",
+  border: "none",
+  cursor: "pointer",
+  font: "inherit",
+  fontSize: "0.8rem",
+  letterSpacing: "0.05em",
+  padding: "0.25em 0.4em",
+};
+
+export const languageSwitcherStyle = {
+  display: "flex",
+  gap: "0.1em",
+  marginLeft: "auto",
+};
+
+export const languageOptionStyle = {
+  ...languageOptionBase,
+  color: colors.muted,
+};
+
+export const languageActiveStyle = {
+  ...languageOptionBase,
+  color: colors.spotlight,
+  fontWeight: 500,
+};
+
+// The links panel is absolutely positioned at right: 0 and would otherwise
+// paint over the toggle and swallow its clicks, so this row is lifted above it.
+export const headerRowStyle = {
+  display: "flex",
+  alignItems: "center",
+  flexWrap: "wrap",
+  gap: "1em",
+  position: "relative",
+  zIndex: 1,
+};
+
+export const linkGroupStyle = { padding: "0 1em 1em" };
+
+export const linkGroupTitleStyle = {
+  color: colors.spotlight,
+  fontSize: "0.9rem",
+  fontWeight: 500,
+  letterSpacing: "0.1em",
+  margin: "0 0 0.5em",
+  padding: 0,
+  textTransform: "uppercase",
+};
+
+export const projectsGroupStyle = { marginTop: "1em" };
+
+export const projectGridStyle = {
+  display: "grid",
+  gap: "0.75em",
+  gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+  margin: "1em 0",
+};
+
+export const projectCardStyle = {
+  border: "1px solid #2a2626",
+  display: "flex",
+  flexDirection: "row",
+  gap: "0.75em",
+  padding: "0.9em",
+};
+
+// A flex item defaults to min-width: auto, so without this the text column
+// refuses to shrink and pushes the card wider instead of wrapping.
+export const projectBodyStyle = {
+  display: "flex",
+  flex: 1,
+  flexDirection: "column",
+  gap: "0.5em",
+  minWidth: 0,
+};
+
+// Height follows the source: both screenshots are already phone-shaped, so
+// there is nothing to crop and object-fit would only risk distorting them.
+export const projectThumbStyle = {
+  alignSelf: "flex-start",
+  flexShrink: 0,
+  height: "auto",
+  width: "56px",
+};
+
+export const projectTitleStyle = { fontWeight: 500 };
+
+export const projectDescriptionStyle = {
+  color: colors.muted,
+  fontSize: "0.85rem",
+  fontWeight: 300,
+};
+
+export const projectToolsStyle = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "0.4em",
+  marginTop: "auto",
+  paddingTop: "0.3em",
+};
+
+export const projectToolStyle = {
+  border: `1px solid ${colors.spotlight}`,
+  color: colors.spotlight,
+  fontSize: "0.7rem",
+  fontWeight: 500,
+  padding: "0.1em 0.45em",
+};

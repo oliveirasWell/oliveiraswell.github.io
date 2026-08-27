@@ -3,10 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`  
   body {
       font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  }
-  
-  body {
-      line-height: 1.5;
+      font-size: 0.9rem;
+      line-height: 1.6;
       background-color: #100e0e;
       padding-top: 2rem;
       display: flex;
@@ -27,10 +25,6 @@ const GlobalStyle = createGlobalStyle`
   
   a {
       text-decoration: none;
-  }
-  
-  span {
-      font-weight: 500;
   }
   
   .link:hover {
