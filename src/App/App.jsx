@@ -19,7 +19,6 @@ import {
   linksListStyle,
   linksPanelStyle,
   linksPanelTitleStyle,
-  marginRight20Style,
   nameHeadingStyle,
   pageContainerStyle,
   pageHeaderStyle,
@@ -100,9 +99,7 @@ const App = () => {
           </div>
           <div style={subtitleStyle} className="resumeContainer">
             {t.roles.map((role) => (
-              <span key={role} style={marginRight20Style}>
-                {role}
-              </span>
+              <span key={role}>{role}</span>
             ))}
           </div>
           <div className="resumeContainer" style={availabilityStyle}>
@@ -179,7 +176,7 @@ const App = () => {
             </div>
 
             <div style={linksListStyle}>
-              <h1 style={linksPanelTitleStyle}>{t.linksTitle}</h1>
+              <h2 style={linksPanelTitleStyle}>{t.linksTitle}</h2>
               <Links titles={t.linkGroups} />
             </div>
           </div>

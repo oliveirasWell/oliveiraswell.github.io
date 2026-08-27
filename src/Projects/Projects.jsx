@@ -1,8 +1,10 @@
 import { projectGroups } from "./projects";
 import {
+  projectBodyStyle,
   projectCardStyle,
   projectDescriptionStyle,
   projectGridStyle,
+  projectThumbStyle,
   projectTitleStyle,
   projectToolStyle,
   projectToolsStyle,
@@ -24,16 +26,22 @@ export const Projects = ({ titles, language }) =>
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span style={projectTitleStyle}>{item.title}</span>
-            <span style={projectDescriptionStyle}>
-              {item.description[language]}
-            </span>
-            <span style={projectToolsStyle}>
-              {item.tools.map((tool) => (
-                <span key={tool} style={projectToolStyle}>
-                  {tool}
-                </span>
-              ))}
+            {item.image && (
+              <img src={item.image} alt="" style={projectThumbStyle} />
+            )}
+
+            <span style={projectBodyStyle}>
+              <span style={projectTitleStyle}>{item.title}</span>
+              <span style={projectDescriptionStyle}>
+                {item.description[language]}
+              </span>
+              <span style={projectToolsStyle}>
+                {item.tools.map((tool) => (
+                  <span key={tool} style={projectToolStyle}>
+                    {tool}
+                  </span>
+                ))}
+              </span>
             </span>
           </a>
         ))}

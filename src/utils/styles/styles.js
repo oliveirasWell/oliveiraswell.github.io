@@ -7,7 +7,6 @@ export const colors = {
 export const whiteTextStyle = { color: colors.text };
 // Weight is reserved for the accent colour, so it carries the emphasis alone.
 export const spotlightTextStyle = { color: colors.spotlight, fontWeight: 500 };
-export const marginRight20Style = { marginRight: "20px" };
 
 // Sized in rem, not em: an em would ride on the body font size and shrink the
 // photo whenever that is tuned. object-fit is what frames an <img> - the
@@ -59,11 +58,17 @@ export const lastNameStyle = {
   fontWeight: 900,
 };
 
+// Without flexWrap the roles never move to a new line - they just shrink into
+// narrow columns and wrap inside themselves. gap on the container beats a
+// margin per item, which would leave a stray gap at the end of every line.
 export const subtitleStyle = {
+  color: colors.spotlight,
+  columnGap: "20px",
   display: "flex",
   flexDirection: "row",
-  color: colors.spotlight,
+  flexWrap: "wrap",
   fontWeight: 500,
+  rowGap: "0.2em",
 };
 
 export const bodyStyle = {
@@ -185,9 +190,28 @@ export const projectGridStyle = {
 export const projectCardStyle = {
   border: "1px solid #2a2626",
   display: "flex",
+  flexDirection: "row",
+  gap: "0.75em",
+  padding: "0.9em",
+};
+
+// A flex item defaults to min-width: auto, so without this the text column
+// refuses to shrink and pushes the card wider instead of wrapping.
+export const projectBodyStyle = {
+  display: "flex",
+  flex: 1,
   flexDirection: "column",
   gap: "0.5em",
-  padding: "0.9em",
+  minWidth: 0,
+};
+
+// Height follows the source: both screenshots are already phone-shaped, so
+// there is nothing to crop and object-fit would only risk distorting them.
+export const projectThumbStyle = {
+  alignSelf: "flex-start",
+  flexShrink: 0,
+  height: "auto",
+  width: "56px",
 };
 
 export const projectTitleStyle = { fontWeight: 500 };

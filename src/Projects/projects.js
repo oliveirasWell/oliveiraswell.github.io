@@ -1,3 +1,6 @@
+import navDasa from "../utils/assets/nav-dasa.jpg";
+import popmenu from "../utils/assets/popmenu.jpg";
+
 // Hand-picked, in display order. Descriptions are written per language so a
 // project stays a single unit; only the copy is translated, never the links.
 export const projectGroups = [
@@ -7,6 +10,7 @@ export const projectGroups = [
       {
         title: "Popmenu for Owners",
         link: "https://apps.apple.com/us/app/popmenu-for-owners/id1491255509",
+        image: popmenu,
         tools: ["React Native", "TypeScript", "GraphQL", "REST"],
         description: {
           en: "Mobile app for the US restaurant SaaS Popmenu, letting owners run their digital presence on the go: live menu edits, orders, reviews, analytics and marketing campaigns. As a senior engineer I shipped user-facing features, cut crashes and latency, and worked with the US product and design teams.",
@@ -18,6 +22,7 @@ export const projectGroups = [
       {
         title: "Nav Dasa",
         link: "https://apps.apple.com/br/app/nav-dasa-exames-e-consultas/id1553834596",
+        image: navDasa,
         tools: ["React Native", "React", "TypeScript", "Node.js"],
         description: {
           en: "Mobile health platform for Dasa, the largest diagnostics network in Brazil: telemedicine appointments, exam and vaccine scheduling, and a personal health record. I was one of the lead engineers and automated the App Store and Google Play releases with Fastlane.",
