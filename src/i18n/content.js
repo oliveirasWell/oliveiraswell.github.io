@@ -4,6 +4,10 @@ export const company = {
   link: "https://www.bairesdev.com/",
 };
 
+// The ?month= param Calendly hands out pins the widget to one month, which
+// would age into the past; the bare event URL always opens on today.
+export const calendly = "https://calendly.com/well-oliveira-snt/nova-reuniao";
+
 export const content = {
   en: {
     roles: [
@@ -33,12 +37,15 @@ export const content = {
       "from scripts that start apps on boot to residential automation.",
     contact: "Want to send a message? Be my guest! Send an",
     contactLink: "e-mail",
-    reposTitle: "Recent work",
-    reposSubtitle: "My latest public repositories, straight from GitHub.",
-    reposAll: "See all on GitHub",
+    contactOr: "or",
+    bookCall: "Book a call",
+    projectGroups: {
+      experience: "Experience",
+      projects: "Projects",
+    },
     linksTitle: "Links",
     linkGroups: {
-      projects: "Projects",
+      projects: "Guides & profiles",
       studies: "Studies",
       writing: "Writing",
     },
@@ -73,12 +80,15 @@ export const content = {
       "de scripts que iniciam apps no boot à automação residencial.",
     contact: "Quer mandar uma mensagem? Fique à vontade! Mande um",
     contactLink: "e-mail",
-    reposTitle: "Trabalhos recentes",
-    reposSubtitle: "Meus repositórios públicos mais recentes, direto do GitHub.",
-    reposAll: "Ver todos no GitHub",
+    contactOr: "ou",
+    bookCall: "Agendar uma call",
+    projectGroups: {
+      experience: "Experiência",
+      projects: "Projetos",
+    },
     linksTitle: "Links",
     linkGroups: {
-      projects: "Projetos",
+      projects: "Guias e perfis",
       studies: "Estudos",
       writing: "Publicações",
     },

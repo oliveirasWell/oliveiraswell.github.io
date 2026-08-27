@@ -1,4 +1,3 @@
-import { beforeEach, vi } from "vitest";
 import "@testing-library/jest-dom/vitest";
 
 // Node 26 defines a global `localStorage` that stays undefined without
@@ -18,9 +17,3 @@ if (!window.localStorage) {
   });
 }
 
-// No test should reach the network. Repos swallows the rejection and renders
-// nothing, which is exactly the offline behaviour; tests that care about the
-// section stub fetch themselves.
-beforeEach(() => {
-  vi.stubGlobal("fetch", vi.fn(() => Promise.reject(new Error("offline"))));
-});

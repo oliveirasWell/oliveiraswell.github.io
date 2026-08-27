@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach } from "vitest";
 import App from "./App";
-import { content } from "../i18n/content";
+import { calendly, content } from "../i18n/content";
 
 beforeEach(() => window.localStorage.clear());
 
@@ -59,4 +59,15 @@ test("translates the link group titles", async () => {
   expect(
     screen.getByRole("heading", { name: content.pt.linkGroups.projects }),
   ).toBeInTheDocument();
+});
+
+test("offers a booking link next to the e-mail", () => {
+  render(<App />);
+
+  const booking = screen.getByRole("link", { name: /Book a call/ });
+
+  expect(booking).toHaveAttribute("href", calendly);
+  expect(booking).toHaveAttribute("target", "_blank");
+  // A stale ?month= would open the widget on a month that has already passed.
+  expect(calendly).not.toContain("month=");
 });

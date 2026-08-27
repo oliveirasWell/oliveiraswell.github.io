@@ -141,43 +141,56 @@ export const linkGroupTitleStyle = {
   textTransform: "uppercase",
 };
 
-export const reposSectionStyle = { marginTop: "1em" };
+export const projectsGroupStyle = { marginTop: "1em" };
 
-export const reposSubtitleStyle = {
-  color: colors.muted,
-  fontSize: "0.85rem",
-  fontWeight: 300,
-};
-
-export const reposGridStyle = {
+export const projectGridStyle = {
   display: "grid",
   gap: "0.75em",
-  gridTemplateColumns: "repeat(auto-fill, minmax(210px, 1fr))",
+  gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
   margin: "1em 0",
 };
 
-export const repoCardStyle = {
+export const projectCardStyle = {
   border: "1px solid #2a2626",
   borderRadius: "4px",
   display: "flex",
   flexDirection: "column",
-  gap: "0.35em",
-  padding: "0.85em",
+  gap: "0.5em",
+  padding: "0.9em",
 };
 
-export const repoNameStyle = { fontWeight: 500, wordBreak: "break-word" };
+export const projectTitleStyle = { fontWeight: 500 };
 
-export const repoDescriptionStyle = {
+export const projectDescriptionStyle = {
   color: colors.muted,
   fontSize: "0.85rem",
   fontWeight: 300,
 };
 
-export const repoMetaStyle = {
-  color: colors.spotlight,
-  fontSize: "0.75rem",
-  fontWeight: 400,
+export const projectToolsStyle = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "0.4em",
   marginTop: "auto",
+  paddingTop: "0.3em",
 };
 
-export const reposAllStyle = { fontSize: "0.85rem", fontWeight: 300 };
+export const projectToolStyle = {
+  border: `1px solid ${colors.spotlight}`,
+  borderRadius: "3px",
+  color: colors.spotlight,
+  fontSize: "0.7rem",
+  fontWeight: 400,
+  padding: "0.1em 0.45em",
+};
+
+// Mirrors the language toggle so the two affordances read as the same control.
+export const bookCallStyle = {
+  border: `1px solid ${colors.spotlight}`,
+  borderRadius: "4px",
+  color: colors.spotlight,
+  display: "inline-block",
+  fontWeight: 500,
+  padding: "0.2em 0.7em",
+  whiteSpace: "nowrap",
+};

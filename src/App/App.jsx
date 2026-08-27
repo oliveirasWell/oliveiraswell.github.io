@@ -1,9 +1,9 @@
 import perfil from "../utils/assets/perfil.jpg";
 import { Links } from "../Links/Links";
 import { SocialLinks } from "../SocialLinks/SocialLinks";
-import { Repos } from "../Repos/Repos";
+import { Projects } from "../Projects/Projects";
 import GlobalStyle from "../utils/styles/GlobalStyle";
-import { company, content } from "../i18n/content";
+import { calendly, company, content } from "../i18n/content";
 import { useLanguage } from "../i18n/useLanguage";
 import {
   bodyStyle,
@@ -15,6 +15,7 @@ import {
   linksContainerStyle,
   linksListStyle,
   linksPanelStyle,
+  bookCallStyle,
   linksPanelTitleStyle,
   marginRight20Style,
   pageContainerStyle,
@@ -39,7 +40,6 @@ const CompanyLink = () => (
   </a>
 );
 
-// Splits a "... {company} ..." string so the company name renders as a link.
 const withCompanyLink = (text) => {
   const [before, after = ""] = text.split("{company}");
 
@@ -124,10 +124,20 @@ const App = () => {
               {t.contact}{" "}
               <a className="link" href="mailto:well.oliveira.snt@gmail.com">
                 {t.contactLink} <span>😉</span>
+              </a>{" "}
+              {t.contactOr}{" "}
+              <a
+                className="link"
+                style={bookCallStyle}
+                href={calendly}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.bookCall} →
               </a>
             </span>
 
-            <Repos t={t} language={language} />
+            <Projects titles={t.projectGroups} language={language} />
           </div>
         </div>
 
