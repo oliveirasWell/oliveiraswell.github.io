@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach } from "vitest";
 import App from "./App";
 import { calendly, content } from "../i18n/content";
+import { languages } from "../i18n/useLanguage";
 
 beforeEach(() => window.localStorage.clear());
 
@@ -21,23 +22,48 @@ test("renders every link with an href", () => {
   links.forEach((link) => expect(link).toHaveAttribute("href"));
 });
 
-test("toggles the copy between english and portuguese", async () => {
-  const user = userEvent.setup();
-  render(<App />);
+test.each(languages.filter((entry) => entry.code !== "en"))(
+  "switches the whole page to $name",
+  async ({ code, name, htmlLang }) => {
+    const user = userEvent.setup();
+    render(<App />);
 
-  expect(
-    screen.getByRole("heading", { name: content.en.projectGroups.experience }),
-  ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: content.en.projectGroups.experience,
+      }),
+    ).toBeInTheDocument();
 
-  await user.click(
-    screen.getByRole("button", { name: content.en.switchLabel }),
-  );
+    await user.click(screen.getByRole("button", { name }));
 
-  expect(
-    screen.getByRole("heading", { name: content.pt.projectGroups.experience }),
-  ).toBeInTheDocument();
-  expect(document.documentElement.lang).toBe("pt-BR");
-  expect(window.localStorage.getItem("lang")).toBe("pt");
+    expect(
+      screen.getByRole("heading", {
+        name: content[code].projectGroups.experience,
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: content[code].linkGroups.projects }),
+    ).toBeInTheDocument();
+    expect(document.documentElement.lang).toBe(htmlLang);
+    expect(window.localStorage.getItem("lang")).toBe(code);
+  },
+);
+
+// A missing key renders as "undefined" on the page rather than failing loudly,
+// so the shapes are compared directly.
+test("every language defines the same keys as english", () => {
+  const shape = (value) =>
+    value && !Array.isArray(value) && typeof value === "object"
+      ? Object.keys(value).sort().join(",")
+      : typeof value;
+
+  languages.forEach(({ code }) => {
+    Object.entries(content.en).forEach(([key, value]) => {
+      expect(`${code}.${key}: ${shape(content[code][key])}`).toBe(
+        `${code}.${key}: ${shape(value)}`,
+      );
+    });
+  });
 });
 
 test("renders every link group with links under it", () => {
@@ -50,19 +76,6 @@ test("renders every link group with links under it", () => {
       0,
     );
   });
-});
-
-test("translates the link group titles", async () => {
-  const user = userEvent.setup();
-  render(<App />);
-
-  await user.click(
-    screen.getByRole("button", { name: content.en.switchLabel }),
-  );
-
-  expect(
-    screen.getByRole("heading", { name: content.pt.linkGroups.projects }),
-  ).toBeInTheDocument();
 });
 
 test("offers a booking link next to the e-mail", () => {

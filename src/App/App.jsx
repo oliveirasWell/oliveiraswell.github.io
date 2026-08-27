@@ -4,14 +4,16 @@ import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { Projects } from "../Projects/Projects";
 import GlobalStyle from "../utils/styles/GlobalStyle";
 import { calendly, company, content, resume } from "../i18n/content";
-import { useLanguage } from "../i18n/useLanguage";
+import { languages, useLanguage } from "../i18n/useLanguage";
 import {
   availabilityStyle,
   bodyStyle,
   firstNameStyle,
   headerRowStyle,
   imageStyle,
-  languageToggleStyle,
+  languageActiveStyle,
+  languageOptionStyle,
+  languageSwitcherStyle,
   lastNameStyle,
   linksContainerStyle,
   linksListStyle,
@@ -54,7 +56,7 @@ const withCompanyLink = (text) => {
 };
 
 const App = () => {
-  const { language, toggleLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const t = content[language];
 
   return (
@@ -77,14 +79,24 @@ const App = () => {
                 <span style={lastNameStyle}>Oliveira</span>
               </h1>
             </div>
-            <button
-              type="button"
-              onClick={toggleLanguage}
-              style={languageToggleStyle}
-              aria-label={t.switchLabel}
-            >
-              {t.switchText}
-            </button>
+            <div style={languageSwitcherStyle}>
+              {languages.map((entry) => {
+                const active = entry.code === language;
+
+                return (
+                  <button
+                    key={entry.code}
+                    type="button"
+                    onClick={() => setLanguage(entry.code)}
+                    style={active ? languageActiveStyle : languageOptionStyle}
+                    aria-label={entry.name}
+                    aria-current={active ? "true" : undefined}
+                  >
+                    {entry.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
           <div style={subtitleStyle} className="resumeContainer">
             {t.roles.map((role) => (

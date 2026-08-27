@@ -123,15 +123,31 @@ export const linksPanelTitleStyle = {
 
 export const linksContainerStyle = { display: "flex" };
 
-export const languageToggleStyle = {
+const languageOptionBase = {
   background: "none",
-  border: `1px solid ${colors.spotlight}`,
-  color: colors.spotlight,
+  border: "none",
   cursor: "pointer",
   font: "inherit",
-  fontWeight: 500,
+  fontSize: "0.8rem",
+  letterSpacing: "0.05em",
+  padding: "0.25em 0.4em",
+};
+
+export const languageSwitcherStyle = {
+  display: "flex",
+  gap: "0.1em",
   marginLeft: "auto",
-  padding: "0.25em 0.75em",
+};
+
+export const languageOptionStyle = {
+  ...languageOptionBase,
+  color: colors.muted,
+};
+
+export const languageActiveStyle = {
+  ...languageOptionBase,
+  color: colors.spotlight,
+  fontWeight: 500,
 };
 
 // The links panel is absolutely positioned at right: 0 and would otherwise
