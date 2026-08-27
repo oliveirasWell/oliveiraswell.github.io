@@ -17,6 +17,7 @@ import {
   linksPanelStyle,
   linksPanelTitleStyle,
   marginRight20Style,
+  nameHeadingStyle,
   pageContainerStyle,
   pageHeaderStyle,
   profileStyle,
@@ -65,13 +66,15 @@ const App = () => {
               <img
                 className="black-white-img"
                 src={perfil}
-                alt="Wellington Oliveira"
+                alt=""
                 style={imageStyle}
               />
-              <span data-testid="title" style={firstNameStyle}>
-                Wellington
-              </span>
-              <span style={lastNameStyle}>Oliveira</span>
+              <h1 style={nameHeadingStyle}>
+                <span data-testid="title" style={firstNameStyle}>
+                  Wellington
+                </span>
+                <span style={lastNameStyle}>Oliveira</span>
+              </h1>
             </div>
             <button
               type="button"
@@ -93,13 +96,17 @@ const App = () => {
 
         <div style={bodyStyle}>
           <div className="resumeContainer" style={resumeContainerStyle}>
-            <h1>{t.greeting}</h1>
-            <span style={whiteTextStyle}>{withCompanyLink(t.intro)}</span>
+            <span style={whiteTextStyle}>{t.intro}</span>
 
             <br />
             <br />
 
-            <span style={whiteTextStyle}>{t.experience}</span>
+            <span style={whiteTextStyle}>{withCompanyLink(t.experience)}</span>
+
+            <br />
+            <br />
+
+            <span style={whiteTextStyle}>{t.background}</span>
 
             <br />
             <br />

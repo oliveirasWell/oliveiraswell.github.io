@@ -9,15 +9,19 @@ export const whiteTextStyle = { color: colors.text };
 export const spotlightTextStyle = { color: colors.spotlight, fontWeight: 500 };
 export const marginRight20Style = { marginRight: "20px" };
 
+// Sized in rem, not em: an em would ride on the body font size and shrink the
+// photo whenever that is tuned. object-fit is what frames an <img> - the
+// background-* properties that used to sit here never applied to one.
 export const imageStyle = {
-  width: "3em",
-  height: "3em",
+  width: "4rem",
+  height: "4rem",
   borderRadius: "50%",
-  backgroundPosition: "center",
-  backgroundSize: "100% auto",
-  backgroundRepeat: "no-repeat",
+  objectFit: "cover",
   margin: "0 5px 5px",
 };
+
+// The name is the page heading now; it only needs the default h1 spacing gone.
+export const nameHeadingStyle = { margin: 0 };
 
 export const pageContainerStyle = {
   display: "flex",

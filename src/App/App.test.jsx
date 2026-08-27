@@ -25,13 +25,17 @@ test("toggles the copy between english and portuguese", async () => {
   const user = userEvent.setup();
   render(<App />);
 
-  expect(screen.getByText(content.en.greeting)).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: content.en.projectGroups.experience }),
+  ).toBeInTheDocument();
 
   await user.click(
     screen.getByRole("button", { name: content.en.switchLabel }),
   );
 
-  expect(screen.getByText(content.pt.greeting)).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: content.pt.projectGroups.experience }),
+  ).toBeInTheDocument();
   expect(document.documentElement.lang).toBe("pt-BR");
   expect(window.localStorage.getItem("lang")).toBe("pt");
 });
