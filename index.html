@@ -3,6 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google tag (gtag.js). GA4 replaces the Universal Analytics property
+         this site used to report to; UA stopped processing data in 2023, so
+         those hits had been going nowhere. One page, no routing: gtag counts
+         the pageview on load and needs no help from React. -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XG7QCYN9FM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XG7QCYN9FM");
+    </script>
     <meta name="theme-color" content="#100e0e" />
     <meta
       name="description"
