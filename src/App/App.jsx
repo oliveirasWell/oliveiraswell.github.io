@@ -6,6 +6,7 @@ import GlobalStyle from "../utils/styles/GlobalStyle";
 import { calendly, company, content, resume } from "../i18n/content";
 import { useLanguage } from "../i18n/useLanguage";
 import {
+  availabilityStyle,
   bodyStyle,
   firstNameStyle,
   headerRowStyle,
@@ -72,7 +73,7 @@ const App = () => {
               <h1 style={nameHeadingStyle}>
                 <span data-testid="title" style={firstNameStyle}>
                   Wellington
-                </span>
+                </span>{" "}
                 <span style={lastNameStyle}>Oliveira</span>
               </h1>
             </div>
@@ -91,6 +92,9 @@ const App = () => {
                 {role}
               </span>
             ))}
+          </div>
+          <div className="resumeContainer" style={availabilityStyle}>
+            {t.availability}
           </div>
         </div>
 

@@ -23,6 +23,14 @@ export const imageStyle = {
 // The name is the page heading now; it only needs the default h1 spacing gone.
 export const nameHeadingStyle = { margin: 0 };
 
+// The first thing a recruiter filters on, so it sits directly under the roles.
+export const availabilityStyle = {
+  color: colors.muted,
+  fontSize: "0.85rem",
+  fontWeight: 300,
+  marginTop: "0.4em",
+};
+
 export const pageContainerStyle = {
   display: "flex",
   padding: "1em",

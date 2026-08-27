@@ -17,6 +17,8 @@ export const content = {
       "Computer Engineer",
       "MSc student in Computer Science",
     ],
+    availability:
+      "Available for remote work \u00b7 GMT-4, overlapping EST and Pacific hours",
     intro:
       "Hi there \u2014 I build mobile and full-stack products, lately with React Native, TypeScript and Ruby on Rails.",
     experience:
@@ -58,6 +60,8 @@ export const content = {
       "Engenheiro de Computação",
       "Mestrando em Ciência da Computação",
     ],
+    availability:
+      "Disponível para trabalho remoto · GMT-4, com sobreposição a EST e Pacific",
     intro:
       "Olá \u2014 construo produtos mobile e full-stack, ultimamente com React Native, TypeScript e Ruby on Rails.",
     experience:
