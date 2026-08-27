@@ -64,7 +64,7 @@ test("translates the link group titles", async () => {
 test("offers a booking link next to the e-mail", () => {
   render(<App />);
 
-  const booking = screen.getByRole("link", { name: /Book a call/ });
+  const booking = screen.getByRole("link", { name: /book a call here/i });
 
   expect(booking).toHaveAttribute("href", calendly);
   expect(booking).toHaveAttribute("target", "_blank");

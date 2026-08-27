@@ -38,7 +38,7 @@ export const content = {
     contact: "Want to send a message? Be my guest! Send an",
     contactLink: "e-mail",
     contactOr: "or",
-    bookCall: "Book a call",
+    bookCall: "book a call here",
     projectGroups: {
       experience: "Experience",
       projects: "Projects",
@@ -81,7 +81,7 @@ export const content = {
     contact: "Quer mandar uma mensagem? Fique à vontade! Mande um",
     contactLink: "e-mail",
     contactOr: "ou",
-    bookCall: "Agendar uma call",
+    bookCall: "agende uma call aqui",
     projectGroups: {
       experience: "Experiência",
       projects: "Projetos",

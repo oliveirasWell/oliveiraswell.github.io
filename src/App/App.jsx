@@ -15,7 +15,6 @@ import {
   linksContainerStyle,
   linksListStyle,
   linksPanelStyle,
-  bookCallStyle,
   linksPanelTitleStyle,
   marginRight20Style,
   pageContainerStyle,
@@ -128,12 +127,11 @@ const App = () => {
               {t.contactOr}{" "}
               <a
                 className="link"
-                style={bookCallStyle}
                 href={calendly}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t.bookCall} →
+                {t.bookCall}
               </a>
             </span>
 

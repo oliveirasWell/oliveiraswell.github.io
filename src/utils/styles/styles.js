@@ -183,14 +183,3 @@ export const projectToolStyle = {
   fontWeight: 400,
   padding: "0.1em 0.45em",
 };
-
-// Mirrors the language toggle so the two affordances read as the same control.
-export const bookCallStyle = {
-  border: `1px solid ${colors.spotlight}`,
-  borderRadius: "4px",
-  color: colors.spotlight,
-  display: "inline-block",
-  fontWeight: 500,
-  padding: "0.2em 0.7em",
-  whiteSpace: "nowrap",
-};

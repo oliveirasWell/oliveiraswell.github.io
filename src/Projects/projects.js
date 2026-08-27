@@ -72,15 +72,6 @@ export const projectGroups = [
           pt: "Um ESP8266 e um sensor DHT11 enviando temperatura e umidade direto para o Firebase, monitorando um cômodo pelo preço de um café.",
         },
       },
-      {
-        title: "Dev utils",
-        link: "https://github.com/oliveirasWell/well-dev-utils",
-        tools: ["Shell", "Python"],
-        description: {
-          en: "The git incantations, shell snippets and setup scripts I keep re-deriving, written down once so I stop searching for them.",
-          pt: "Os comandos de git, snippets de shell e scripts de setup que eu vivia redescobrindo, anotados de uma vez para parar de procurar.",
-        },
-      },
     ],
   },
 ];
