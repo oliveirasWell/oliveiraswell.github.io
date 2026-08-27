@@ -5,7 +5,8 @@ export const colors = {
 };
 
 export const whiteTextStyle = { color: colors.text };
-export const spotlightTextStyle = { color: colors.spotlight };
+// Weight is reserved for the accent colour, so it carries the emphasis alone.
+export const spotlightTextStyle = { color: colors.spotlight, fontWeight: 500 };
 export const marginRight20Style = { marginRight: "20px" };
 
 export const imageStyle = {
@@ -50,6 +51,7 @@ export const subtitleStyle = {
   display: "flex",
   flexDirection: "row",
   color: colors.spotlight,
+  fontWeight: 500,
 };
 
 export const bodyStyle = {
@@ -109,7 +111,6 @@ export const linksContainerStyle = { display: "flex" };
 export const languageToggleStyle = {
   background: "none",
   border: `1px solid ${colors.spotlight}`,
-  borderRadius: "4px",
   color: colors.spotlight,
   cursor: "pointer",
   font: "inherit",
@@ -152,7 +153,6 @@ export const projectGridStyle = {
 
 export const projectCardStyle = {
   border: "1px solid #2a2626",
-  borderRadius: "4px",
   display: "flex",
   flexDirection: "column",
   gap: "0.5em",
@@ -177,9 +177,8 @@ export const projectToolsStyle = {
 
 export const projectToolStyle = {
   border: `1px solid ${colors.spotlight}`,
-  borderRadius: "3px",
   color: colors.spotlight,
   fontSize: "0.7rem",
-  fontWeight: 400,
+  fontWeight: 500,
   padding: "0.1em 0.45em",
 };

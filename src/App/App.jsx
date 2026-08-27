@@ -3,7 +3,7 @@ import { Links } from "../Links/Links";
 import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { Projects } from "../Projects/Projects";
 import GlobalStyle from "../utils/styles/GlobalStyle";
-import { calendly, company, content } from "../i18n/content";
+import { calendly, company, content, resume } from "../i18n/content";
 import { useLanguage } from "../i18n/useLanguage";
 import {
   bodyStyle,
@@ -133,6 +133,16 @@ const App = () => {
               >
                 {t.bookCall}
               </a>
+              . {t.resumeText}{" "}
+              <a
+                className="link"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.resumeLink}
+              </a>
+              .
             </span>
 
             <Projects titles={t.projectGroups} language={language} />

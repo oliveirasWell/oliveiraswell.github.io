@@ -6,6 +6,8 @@ export const company = {
 
 // The ?month= param Calendly hands out pins the widget to one month, which
 // would age into the past; the bare event URL always opens on today.
+export const resume = "/docs/resume.pdf";
+
 export const calendly = "https://calendly.com/well-oliveira-snt/nova-reuniao";
 
 export const content = {
@@ -39,6 +41,8 @@ export const content = {
     contactLink: "e-mail",
     contactOr: "or",
     bookCall: "book a call here",
+    resumeText: "You can also read my",
+    resumeLink: "resume",
     projectGroups: {
       experience: "Experience",
       projects: "Projects",
@@ -82,6 +86,8 @@ export const content = {
     contactLink: "e-mail",
     contactOr: "ou",
     bookCall: "agende uma call aqui",
+    resumeText: "Você também pode ler meu",
+    resumeLink: "currículo",
     projectGroups: {
       experience: "Experiência",
       projects: "Projetos",
