@@ -150,14 +150,13 @@ const App = () => {
         </div>
 
         <div className="linkFixedRight" style={linksPanelStyle}>
-          <h1 style={linksPanelTitleStyle}>{t.linksTitle}</h1>
-
           <div style={linksContainerStyle}>
             <div style={socialLinksStyle} className="no-display-mobile">
               <SocialLinks />
             </div>
 
             <div style={linksListStyle}>
+              <h1 style={linksPanelTitleStyle}>{t.linksTitle}</h1>
               <Links titles={t.linkGroups} />
             </div>
           </div>

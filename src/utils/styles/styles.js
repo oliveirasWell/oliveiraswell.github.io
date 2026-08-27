@@ -100,10 +100,13 @@ export const socialLinksMobileStyle = {
 
 export const linksPanelStyle = { minWidth: "25%", padding: "0.5em" };
 
+// Sits inside the links column as a flex row of its own. The indent is in rem,
+// not em: the group headings below indent by 1em of the 0.9rem body text, and
+// an em here would resolve against this heading's own much larger font size.
 export const linksPanelTitleStyle = {
-  padding: "1em",
-  flexGrow: 1,
-  textAlign: "center",
+  flexBasis: "100%",
+  margin: 0,
+  padding: "0 0.9rem 0.5rem",
 };
 
 export const linksContainerStyle = { display: "flex" };
