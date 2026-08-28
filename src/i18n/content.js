@@ -22,7 +22,7 @@ export const content = {
     availability:
       "Available for remote work · GMT-4, overlapping EST and Pacific hours",
     intro:
-      "Hi there — I build mobile and full-stack products, lately with React Native, TypeScript and Ruby on Rails.",
+      "Hi there — I'm a full-stack developer building web and mobile products, lately with React, Next.js, Node.js, React Native, TypeScript and Ruby on Rails.",
     experience:
       "For five years at {company} I worked on a hospitality app for iOS and Android — online ordering, payments, reservations — plus the Rails and GraphQL behind it and the LLM-powered features on top. Along the way I ran more than 300 technical interviews and co-designed the scorecards behind them.",
     background:
@@ -63,7 +63,7 @@ export const content = {
     availability:
       "Disponível para trabalho remoto · GMT-4, com sobreposição a EST e Pacific",
     intro:
-      "Olá — construo produtos mobile e full-stack, ultimamente com React Native, TypeScript e Ruby on Rails.",
+      "Olá — sou desenvolvedor full-stack, construindo produtos web e mobile, ultimamente com React, Next.js, Node.js, React Native, TypeScript e Ruby on Rails.",
     experience:
       "Por cinco anos na {company} trabalhei num app de hospitalidade para iOS e Android — pedidos online, pagamentos, reservas — além do Rails e GraphQL por trás e das funcionalidades com LLM em cima. No caminho, conduzi mais de 300 entrevistas técnicas e ajudei a desenhar os scorecards de avaliação.",
     background:
@@ -104,7 +104,7 @@ export const content = {
     availability:
       "Disponible para trabajo remoto · GMT-4, con solapamiento con EST y Pacific",
     intro:
-      "Hola — construyo productos móviles y full-stack, últimamente con React Native, TypeScript y Ruby on Rails.",
+      "Hola — soy desarrollador full-stack, construyo productos web y móviles, últimamente con React, Next.js, Node.js, React Native, TypeScript y Ruby on Rails.",
     experience:
       "Durante cinco años en {company} trabajé en una app de hostelería para iOS y Android — pedidos en línea, pagos, reservas — además del Rails y GraphQL por detrás y de las funcionalidades con LLM por encima. En el camino realicé más de 300 entrevistas técnicas y ayudé a diseñar los scorecards de evaluación.",
     background:
@@ -145,7 +145,7 @@ export const content = {
     availability:
       "Disponible pour du travail à distance · GMT-4, en chevauchement avec EST et Pacific",
     intro:
-      "Bonjour — je construis des produits mobiles et full-stack, dernièrement avec React Native, TypeScript et Ruby on Rails.",
+      "Bonjour — je suis développeur full-stack, je construis des produits web et mobiles, dernièrement avec React, Next.js, Node.js, React Native, TypeScript et Ruby on Rails.",
     experience:
       "Pendant cinq ans chez {company}, j'ai travaillé sur une application pour la restauration sur iOS et Android — commandes en ligne, paiements, réservations — ainsi que sur le Rails et le GraphQL derrière et les fonctionnalités LLM par-dessus. En chemin, j'ai mené plus de 300 entretiens techniques et co-conçu les grilles d'évaluation.",
     background:
