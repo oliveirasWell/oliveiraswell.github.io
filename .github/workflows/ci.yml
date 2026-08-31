@@ -26,6 +26,8 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: yarn build
+        env:
+          VITE_SENTRY_DSN: ${{ secrets.VITE_SENTRY_DSN }}
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/master'
