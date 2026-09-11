@@ -4,6 +4,10 @@ export const linkGroups = [
     id: "projects",
     items: [
       {
+        text: "Remote Engineering Radar app",
+        link: "https://remote-engineering-radar.vercel.app",
+      },
+      {
         text: "React + Firebase step by step",
         link: "https://github.com/oliveirasWell/react-firebase-step-by-step",
       },

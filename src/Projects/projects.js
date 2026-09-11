@@ -37,6 +37,17 @@ export const projectGroups = [
     id: "projects",
     items: [
       {
+        title: "Remote Engineering Radar",
+        link: "https://remote-engineering-radar.vercel.app",
+        tools: ["Next.js", "TypeScript", "Prisma", "GitHub Actions"],
+        description: {
+          en: "Daily overview of remote senior frontend and fullstack roles. Public job boards are ingested once a day, scored with simple heuristics, and linked back to the original posting.",
+          pt: "Panorama atualizado todo dia de vagas remotas sênior de frontend e fullstack. Boards públicos são coletados uma vez por dia, pontuados com heurísticas simples e ligados de volta à vaga original.",
+          es: "Resumen cotidiano de roles remotos senior de frontend y fullstack. Los tableros públicos se ingieren una vez al día, se puntúan con heurísticas simples y enlazan al anuncio original.",
+          fr: "Tour d'horizon quotidien des postes remote senior frontend et fullstack. Les boards publics sont ingérés une fois par jour, scorés avec des heuristiques simples, et reliés à l'offre d'origine.",
+        },
+      },
+      {
         title: "Diário",
         link: "https://github.com/oliveirasWell/diario",
         tools: ["Next.js", "TypeScript", "GraphQL", "Prisma", "MongoDB"],
