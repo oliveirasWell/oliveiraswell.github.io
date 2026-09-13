@@ -11,7 +11,7 @@ Production monitoring for [oliveiraswell.github.io](https://oliveiraswell.github
 
 ## Google Analytics 4 (traffic)
 
-- **Measurement ID:** `G-XG7QCYN9FM`
+- **Measurement ID:** `G-JDM5P7N0YD`
 - **Integration:** gtag snippet in `index.html` (pageview on load; no React routing)
 - Unchanged by Sentry work — both run independently in production
 
