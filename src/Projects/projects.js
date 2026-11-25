@@ -1,5 +1,6 @@
 import navDasa from "../utils/assets/nav-dasa.jpg";
 import popmenu from "../utils/assets/popmenu.jpg";
+import stitchfix from "../utils/assets/stitchfix.jpg";
 
 // Hand-picked, in display order. Descriptions are written per language so a
 // project stays a single unit; only the copy is translated, never the links.
@@ -8,15 +9,27 @@ export const projectGroups = [
     id: "experience",
     items: [
       {
+        title: "Stitch Fix",
+        link: "https://www.stitchfix.com/",
+        image: stitchfix,
+        tools: ["React", "Next.js", "TypeScript", "GraphQL"],
+        description: {
+          en: "Online personal styling company. As a senior full-stack engineer I work across React/Next.js micro-frontends and Node.js and Rails microservices composed with Apollo Federation, including shared components and production observability.",
+          pt: "Empresa de personal styling online. Como engenheiro full-stack sênior, trabalho com micro-frontends em React/Next.js e microsserviços em Node.js e Rails compostos com Apollo Federation, incluindo componentes compartilhados e observabilidade em produção.",
+          es: "Empresa de personal styling en línea. Como ingeniero full-stack senior, trabajo con micro-frontends en React/Next.js y microservicios en Node.js y Rails compuestos con Apollo Federation, incluidos componentes compartidos y observabilidad en producción.",
+          fr: "Entreprise de personal styling en ligne. En tant qu'ingénieur full-stack senior, je travaille sur des micro-frontends React/Next.js et des microservices Node.js et Rails composés avec Apollo Federation, y compris des composants partagés et l'observabilité en production.",
+        },
+      },
+      {
         title: "Popmenu for Owners",
         link: "https://apps.apple.com/us/app/popmenu-for-owners/id1491255509",
         image: popmenu,
         tools: ["React Native", "TypeScript", "GraphQL", "REST"],
         description: {
-          en: "Mobile app for the US restaurant SaaS Popmenu, letting owners run their digital presence on the go: live menu edits, orders, reviews, analytics and marketing campaigns. As a senior engineer I shipped user-facing features, cut crashes and latency, and worked with the US product and design teams.",
-          pt: "App mobile do Popmenu, SaaS americano para restaurantes, onde o dono gerencia toda a presença digital: edição de cardápio em tempo real, pedidos, avaliações, analytics e campanhas de marketing. Como engenheiro sênior entreguei features, reduzi crashes e latência, e trabalhei com os times de produto e design nos EUA.",
-          es: "App móvil del SaaS estadounidense Popmenu, donde el dueño del restaurante gestiona toda su presencia digital: edición de menú en tiempo real, pedidos, reseñas, analítica y campañas de marketing. Como ingeniero senior entregué funcionalidades, reduje caídas y latencia, y trabajé con los equipos de producto y diseño en EE. UU.",
-          fr: "Application mobile de Popmenu, un SaaS américain pour la restauration, où le restaurateur pilote toute sa présence numérique : menu modifiable en direct, commandes, avis, analytique et campagnes marketing. En tant qu'ingénieur senior, j'ai livré des fonctionnalités, réduit les plantages et la latence, et travaillé avec les équipes produit et design aux États-Unis.",
+          en: "Mobile app for Popmenu, a SaaS serving thousands of US restaurants, letting owners run their digital presence on the go: live menu edits, orders, reviews, analytics and marketing campaigns. As a senior engineer I shipped user-facing features, cut crashes and latency, and worked with the US product and design teams. Across the platform, I also cut customer onboarding from 4 days to 5 hours with an AI agent pipeline.",
+          pt: "App mobile do Popmenu, SaaS que atende milhares de restaurantes nos EUA, onde o dono gerencia toda a presença digital: edição de cardápio em tempo real, pedidos, avaliações, analytics e campanhas de marketing. Como engenheiro sênior entreguei features, reduzi crashes e latência, e trabalhei com os times de produto e design nos EUA. Na plataforma, também reduzi o onboarding de clientes de 4 dias para 5 horas com um pipeline de agentes de IA.",
+          es: "App móvil de Popmenu, un SaaS que atiende a miles de restaurantes en EE. UU., donde el dueño del restaurante gestiona toda su presencia digital: edición de menú en tiempo real, pedidos, reseñas, analítica y campañas de marketing. Como ingeniero senior entregué funcionalidades, reduje caídas y latencia, y trabajé con los equipos de producto y diseño en EE. UU. En la plataforma, también reduje el onboarding de clientes de 4 días a 5 horas con un pipeline de agentes de IA.",
+          fr: "Application mobile de Popmenu, un SaaS au service de milliers de restaurants américains, où le restaurateur pilote toute sa présence numérique : menu modifiable en direct, commandes, avis, analytique et campagnes marketing. En tant qu'ingénieur senior, j'ai livré des fonctionnalités, réduit les plantages et la latence, et travaillé avec les équipes produit et design aux États-Unis. Sur la plateforme, j'ai aussi ramené l'onboarding des clients de 4 jours à 5 heures grâce à un pipeline d'agents IA.",
         },
       },
       {
@@ -25,10 +38,10 @@ export const projectGroups = [
         image: navDasa,
         tools: ["React Native", "React", "TypeScript", "Node.js"],
         description: {
-          en: "Mobile health platform for Dasa, the largest diagnostics network in Brazil: telemedicine appointments, exam and vaccine scheduling, and a personal health record. I was one of the lead engineers and automated the App Store and Google Play releases with Fastlane.",
-          pt: "Plataforma de saúde mobile da Dasa, a maior rede de diagnósticos do Brasil: teleconsultas, agendamento de exames e vacinas e histórico de saúde. Fui um dos engenheiros líderes e automatizei as publicações na App Store e no Google Play com Fastlane.",
-          es: "Plataforma de salud móvil de Dasa, la mayor red de diagnósticos de Brasil: teleconsultas, agendamiento de exámenes y vacunas e historial de salud. Fui uno de los ingenieros líderes y automaticé las publicaciones en la App Store y en Google Play con Fastlane.",
-          fr: "Plateforme de santé mobile de Dasa, le plus grand réseau de diagnostics du Brésil : téléconsultations, prise de rendez-vous pour examens et vaccins, et dossier de santé. J'étais l'un des ingénieurs référents et j'ai automatisé les publications sur l'App Store et Google Play avec Fastlane.",
+          en: "Mobile health platform for Dasa, the largest diagnostics network in Brazil, now serving about 2 million monthly users: telemedicine appointments, exam and vaccine scheduling, and a personal health record. I was deputy technical lead and automated the App Store and Google Play releases with Fastlane.",
+          pt: "Plataforma de saúde mobile da Dasa, a maior rede de diagnósticos do Brasil, hoje com cerca de 2 milhões de usuários por mês: teleconsultas, agendamento de exames e vacinas e histórico de saúde. Fui líder técnico adjunto e automatizei as publicações na App Store e no Google Play com Fastlane.",
+          es: "Plataforma de salud móvil de Dasa, la mayor red de diagnósticos de Brasil, que hoy atiende a unos 2 millones de usuarios al mes: teleconsultas, agendamiento de exámenes y vacunas e historial de salud. Fui líder técnico adjunto y automaticé las publicaciones en la App Store y en Google Play con Fastlane.",
+          fr: "Plateforme de santé mobile de Dasa, le plus grand réseau de diagnostics du Brésil, qui sert aujourd'hui environ 2 millions d'utilisateurs par mois : téléconsultations, prise de rendez-vous pour examens et vaccins, et dossier de santé. J'étais responsable technique adjoint et j'ai automatisé les publications sur l'App Store et Google Play avec Fastlane.",
         },
       },
     ],

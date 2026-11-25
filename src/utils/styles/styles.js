@@ -205,8 +205,8 @@ export const projectBodyStyle = {
   minWidth: 0,
 };
 
-// Height follows the source: both screenshots are already phone-shaped, so
-// there is nothing to crop and object-fit would only risk distorting them.
+// Height follows the source: the app screenshots are already phone-shaped
+// and the Stitch Fix mark is square, so object-fit would only risk distorting them.
 export const projectThumbStyle = {
   alignSelf: "flex-start",
   flexShrink: 0,

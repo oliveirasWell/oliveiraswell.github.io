@@ -1,4 +1,4 @@
-// Last role, kept as a link because the bio still refers to it.
+// Employer behind both the current and the previous client role; the bio links it.
 export const company = {
   name: "BairesDev",
   link: "https://www.bairesdev.com/",
@@ -15,18 +15,18 @@ export const calendly = "https://calendly.com/well-oliveira-snt/nova-reuniao";
 export const content = {
   en: {
     roles: [
-      "Senior Software Engineer",
+      "Senior Full Stack Engineer",
       "Computer Engineer",
       "MSc student in Computer Science",
     ],
     availability:
       "Available for remote work · GMT-4, overlapping EST and Pacific hours",
     intro:
-      "Hi there — I'm a full-stack developer building web and mobile products, lately with React, Next.js, Node.js, React Native, TypeScript and Ruby on Rails.",
+      "Hi there — I'm a full-stack developer building web and mobile products with React, Next.js, TypeScript, Node.js, React Native and Ruby on Rails, plus LLM features, RAG and AI agents.",
     experience:
-      "For five years at {company} I worked on a hospitality app for iOS and Android — online ordering, payments, reservations — plus the Rails and GraphQL behind it and the LLM-powered features on top. Along the way I ran more than 300 technical interviews and co-designed the scorecards behind them.",
+      "Since September 2026 I've been a Senior Full Stack Engineer at Stitch Fix via {company}, working across React/Next.js micro-frontends and Node.js and Rails microservices composed with Apollo Federation. Before that, also through them, I spent five years at Popmenu, a hospitality platform serving thousands of US restaurants: I put LLM-powered features and agentic systems into production with the Claude API and RAG, cut customer onboarding from 4 days to 5 hours with an AI agent pipeline, and delivered ordering, payments and reservations. As a part-time technical interviewer for them from 2022 to 2026, I ran more than 900 interviews for React, React Native, TypeScript and front-end roles and co-designed the evaluation scorecards.",
     background:
-      "Before that I led a squad at TecSinapse, where back in 2019 we shipped one of Brazil's first offline PWAs, and built a health app at Dextra that serves around 10,000 people. Computer engineer from UFMS, MBA in Artificial Intelligence from USP, currently an MSc student in Computer Science.",
+      "Earlier, I led a squad at TecSinapse, where back in 2019 we shipped one of Brazil's first offline-first PWAs, and then at Dextra I was deputy technical lead on Dasa Nav, a telemedicine and healthcare platform now serving about 2 million monthly users. Computer Engineering from UFMS (2016), MBA in Artificial Intelligence from USP (2024), currently an MSc student in Computer Science at UFMS (expected 2028).",
     interestsIntro: "My current interests are",
     conjunction: "and",
     interests: [
@@ -56,18 +56,18 @@ export const content = {
   },
   pt: {
     roles: [
-      "Engenheiro de Software Sênior",
+      "Engenheiro Full Stack Sênior",
       "Engenheiro de Computação",
       "Mestrando em Ciência da Computação",
     ],
     availability:
       "Disponível para trabalho remoto · GMT-4, com sobreposição a EST e Pacific",
     intro:
-      "Olá — sou desenvolvedor full-stack, construindo produtos web e mobile, ultimamente com React, Next.js, Node.js, React Native, TypeScript e Ruby on Rails.",
+      "Olá — sou desenvolvedor full-stack, construindo produtos web e mobile com React, Next.js, TypeScript, Node.js, React Native e Ruby on Rails, além de funcionalidades com LLM, RAG e agentes de IA.",
     experience:
-      "Por cinco anos na {company} trabalhei num app de hospitalidade para iOS e Android — pedidos online, pagamentos, reservas — além do Rails e GraphQL por trás e das funcionalidades com LLM em cima. No caminho, conduzi mais de 300 entrevistas técnicas e ajudei a desenhar os scorecards de avaliação.",
+      "Desde setembro de 2026 sou Engenheiro Full Stack Sênior na Stitch Fix via {company}, trabalhando com micro-frontends em React/Next.js e microsserviços em Node.js e Rails compostos com Apollo Federation. Antes, também por meio dela, passei cinco anos no Popmenu, uma plataforma de hospitalidade que atende milhares de restaurantes nos EUA: coloquei em produção funcionalidades com LLM e sistemas agênticos com a Claude API e RAG, reduzi o onboarding de clientes de 4 dias para 5 horas com um pipeline de agentes de IA e entreguei pedidos, pagamentos e reservas. Como entrevistador técnico em meio período da empresa, de 2022 a 2026, conduzi mais de 900 entrevistas para vagas de React, React Native, TypeScript e front-end e ajudei a desenhar os scorecards de avaliação.",
     background:
-      "Antes disso liderei um squad na TecSinapse, onde lá em 2019 entregamos um dos primeiros PWAs offline do Brasil, e construí na Dextra um app de saúde que atende cerca de 10 mil pessoas. Engenheiro de computação pela UFMS, MBA em Inteligência Artificial pela USP e atualmente mestrando em Ciência da Computação.",
+      "Mais atrás, liderei um squad na TecSinapse, onde lá em 2019 entregamos um dos primeiros PWAs offline-first do Brasil, e depois, na Dextra, fui líder técnico adjunto no Dasa Nav, uma plataforma de telemedicina e saúde que hoje atende cerca de 2 milhões de usuários por mês. Engenharia de Computação pela UFMS (2016), MBA em Inteligência Artificial pela USP (2024) e atualmente mestrando em Ciência da Computação na UFMS (conclusão prevista para 2028).",
     interestsIntro: "Meus interesses atuais são",
     conjunction: "e",
     interests: [
@@ -97,18 +97,18 @@ export const content = {
   },
   es: {
     roles: [
-      "Ingeniero de Software Senior",
+      "Ingeniero Full Stack Senior",
       "Ingeniero en Computación",
       "Estudiante de maestría en Ciencias de la Computación",
     ],
     availability:
       "Disponible para trabajo remoto · GMT-4, con solapamiento con EST y Pacific",
     intro:
-      "Hola — soy desarrollador full-stack, construyo productos web y móviles, últimamente con React, Next.js, Node.js, React Native, TypeScript y Ruby on Rails.",
+      "Hola — soy desarrollador full-stack, construyo productos web y móviles con React, Next.js, TypeScript, Node.js, React Native y Ruby on Rails, además de funcionalidades con LLM, RAG y agentes de IA.",
     experience:
-      "Durante cinco años en {company} trabajé en una app de hostelería para iOS y Android — pedidos en línea, pagos, reservas — además del Rails y GraphQL por detrás y de las funcionalidades con LLM por encima. En el camino realicé más de 300 entrevistas técnicas y ayudé a diseñar los scorecards de evaluación.",
+      "Desde septiembre de 2026 soy Ingeniero Full Stack Senior en Stitch Fix a través de {company}, trabajando con micro-frontends en React/Next.js y microservicios en Node.js y Rails compuestos con Apollo Federation. Antes, también a través de esa empresa, pasé cinco años en Popmenu, una plataforma de hostelería que atiende a miles de restaurantes en EE. UU.: puse en producción funcionalidades con LLM y sistemas agénticos con la Claude API y RAG, reduje el onboarding de clientes de 4 días a 5 horas con un pipeline de agentes de IA y entregué pedidos, pagos y reservas. Como entrevistador técnico a tiempo parcial de la empresa, de 2022 a 2026, realicé más de 900 entrevistas para puestos de React, React Native, TypeScript y front-end y ayudé a diseñar los scorecards de evaluación.",
     background:
-      "Antes de eso lideré un squad en TecSinapse, donde en 2019 lanzamos una de las primeras PWA offline de Brasil, y construí en Dextra una app de salud que atiende a unas 10.000 personas. Ingeniero en computación por la UFMS, MBA en Inteligencia Artificial por la USP y actualmente estudiante de maestría en Ciencias de la Computación.",
+      "Más atrás, lideré un squad en TecSinapse, donde en 2019 lanzamos una de las primeras PWA offline-first de Brasil, y después, en Dextra, fui líder técnico adjunto en Dasa Nav, una plataforma de telemedicina y salud que hoy atiende a unos 2 millones de usuarios al mes. Ingeniería en Computación por la UFMS (2016), MBA en Inteligencia Artificial por la USP (2024) y actualmente estudiante de maestría en Ciencias de la Computación en la UFMS (finalización prevista en 2028).",
     interestsIntro: "Mis intereses actuales son",
     conjunction: "y",
     interests: [
@@ -138,18 +138,18 @@ export const content = {
   },
   fr: {
     roles: [
-      "Ingénieur logiciel senior",
+      "Ingénieur full stack senior",
       "Ingénieur en informatique",
       "Étudiant en master d'informatique",
     ],
     availability:
       "Disponible pour du travail à distance · GMT-4, en chevauchement avec EST et Pacific",
     intro:
-      "Bonjour — je suis développeur full-stack, je construis des produits web et mobiles, dernièrement avec React, Next.js, Node.js, React Native, TypeScript et Ruby on Rails.",
+      "Bonjour — je suis développeur full-stack, je construis des produits web et mobiles avec React, Next.js, TypeScript, Node.js, React Native et Ruby on Rails, ainsi que des fonctionnalités LLM, du RAG et des agents IA.",
     experience:
-      "Pendant cinq ans chez {company}, j'ai travaillé sur une application pour la restauration sur iOS et Android — commandes en ligne, paiements, réservations — ainsi que sur le Rails et le GraphQL derrière et les fonctionnalités LLM par-dessus. En chemin, j'ai mené plus de 300 entretiens techniques et co-conçu les grilles d'évaluation.",
+      "Depuis septembre 2026, je suis ingénieur full stack senior chez Stitch Fix via {company}, où je travaille sur des micro-frontends React/Next.js et des microservices Node.js et Rails composés avec Apollo Federation. Auparavant, toujours par son intermédiaire, j'ai passé cinq ans chez Popmenu, une plateforme pour la restauration au service de milliers de restaurants américains : j'ai mis en production des fonctionnalités LLM et des systèmes agentiques avec la Claude API et le RAG, ramené l'onboarding des clients de 4 jours à 5 heures grâce à un pipeline d'agents IA, et livré les commandes, les paiements et les réservations. Intervieweur technique à temps partiel pour cette même entreprise de 2022 à 2026, j'ai mené plus de 900 entretiens pour des postes React, React Native, TypeScript et front-end et co-conçu les grilles d'évaluation.",
     background:
-      "Avant cela, j'ai dirigé une équipe chez TecSinapse, où nous avons livré en 2019 l'une des premières PWA hors ligne du Brésil, et construit chez Dextra une application de santé qui sert environ 10 000 personnes. Ingénieur en informatique (UFMS), MBA en intelligence artificielle (USP), actuellement en master d'informatique.",
+      "Plus tôt, j'ai dirigé une équipe chez TecSinapse, où nous avons livré en 2019 l'une des premières PWA offline-first du Brésil, puis, chez Dextra, j'ai été responsable technique adjoint sur Dasa Nav, une plateforme de télémédecine et de santé qui sert aujourd'hui environ 2 millions d'utilisateurs par mois. Ingénieur en informatique (UFMS, 2016), MBA en intelligence artificielle (USP, 2024), actuellement en master d'informatique à l'UFMS (fin prévue en 2028).",
     interestsIntro: "Mes centres d'intérêt actuels sont",
     conjunction: "et",
     interests: [
