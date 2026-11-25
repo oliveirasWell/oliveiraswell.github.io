@@ -20,7 +20,7 @@ export const content = {
       "MSc student in Computer Science",
     ],
     availability:
-      "Available for remote work · GMT-4, with complete overlap with US Eastern business hours",
+      "Available for remote work · GMT-4, overlapping EST and Pacific hours",
     intro:
       "Hi there — I'm a full-stack developer building web and mobile products with React, Next.js, TypeScript, Node.js, React Native and Ruby on Rails, plus LLM features, RAG and AI agents.",
     experience:
@@ -61,7 +61,7 @@ export const content = {
       "Mestrando em Ciência da Computação",
     ],
     availability:
-      "Disponível para trabalho remoto · GMT-4, com sobreposição total ao horário comercial da costa leste dos EUA",
+      "Disponível para trabalho remoto · GMT-4, com sobreposição a EST e Pacific",
     intro:
       "Olá — sou desenvolvedor full-stack, construindo produtos web e mobile com React, Next.js, TypeScript, Node.js, React Native e Ruby on Rails, além de funcionalidades com LLM, RAG e agentes de IA.",
     experience:
@@ -102,7 +102,7 @@ export const content = {
       "Estudiante de maestría en Ciencias de la Computación",
     ],
     availability:
-      "Disponible para trabajo remoto · GMT-4, con coincidencia total con el horario laboral del este de EE. UU.",
+      "Disponible para trabajo remoto · GMT-4, con solapamiento con EST y Pacific",
     intro:
       "Hola — soy desarrollador full-stack, construyo productos web y móviles con React, Next.js, TypeScript, Node.js, React Native y Ruby on Rails, además de funcionalidades con LLM, RAG y agentes de IA.",
     experience:
@@ -143,7 +143,7 @@ export const content = {
       "Étudiant en master d'informatique",
     ],
     availability:
-      "Disponible pour du travail à distance · GMT-4, en chevauchement complet avec les heures de bureau de la côte Est des États-Unis",
+      "Disponible pour du travail à distance · GMT-4, en chevauchement avec EST et Pacific",
     intro:
       "Bonjour — je suis développeur full-stack, je construis des produits web et mobiles avec React, Next.js, TypeScript, Node.js, React Native et Ruby on Rails, ainsi que des fonctionnalités LLM, du RAG et des agents IA.",
     experience:

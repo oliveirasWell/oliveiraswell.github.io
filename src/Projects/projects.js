@@ -1,5 +1,6 @@
 import navDasa from "../utils/assets/nav-dasa.jpg";
 import popmenu from "../utils/assets/popmenu.jpg";
+import stitchfix from "../utils/assets/stitchfix.jpg";
 
 // Hand-picked, in display order. Descriptions are written per language so a
 // project stays a single unit; only the copy is translated, never the links.
@@ -7,6 +8,18 @@ export const projectGroups = [
   {
     id: "experience",
     items: [
+      {
+        title: "Stitch Fix",
+        link: "https://www.stitchfix.com/",
+        image: stitchfix,
+        tools: ["React", "Next.js", "TypeScript", "GraphQL"],
+        description: {
+          en: "Online personal styling company. As a senior full-stack engineer I work across React/Next.js micro-frontends and Node.js and Rails microservices composed with Apollo Federation, including shared components and production observability.",
+          pt: "Empresa de personal styling online. Como engenheiro full-stack sênior, trabalho com micro-frontends em React/Next.js e microsserviços em Node.js e Rails compostos com Apollo Federation, incluindo componentes compartilhados e observabilidade em produção.",
+          es: "Empresa de personal styling en línea. Como ingeniero full-stack senior, trabajo con micro-frontends en React/Next.js y microservicios en Node.js y Rails compuestos con Apollo Federation, incluidos componentes compartidos y observabilidad en producción.",
+          fr: "Entreprise de personal styling en ligne. En tant qu'ingénieur full-stack senior, je travaille sur des micro-frontends React/Next.js et des microservices Node.js et Rails composés avec Apollo Federation, y compris des composants partagés et l'observabilité en production.",
+        },
+      },
       {
         title: "Popmenu for Owners",
         link: "https://apps.apple.com/us/app/popmenu-for-owners/id1491255509",
